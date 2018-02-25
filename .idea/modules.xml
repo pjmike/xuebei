@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Xuebei-mongodb/Xuebei-mongodb.iml" filepath="$PROJECT_DIR$/../Xuebei-mongodb/Xuebei-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xuebei.iml" filepath="$PROJECT_DIR$/xuebei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xuebei-common/xuebei-common.iml" filepath="$PROJECT_DIR$/xuebei-common/xuebei-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xuebei-im/xuebei-im.iml" filepath="$PROJECT_DIR$/xuebei-im/xuebei-im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" filepath="$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" />
+    </modules>
+  </component>
+</project>

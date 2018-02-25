@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xuebei-common" />
+        <module name="xuebei-im" />
+        <module name="xuebei-mongo" />
+        <module name="Xuebei-mongodb" />
+        <module name="xuebei-mongodb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xuebei" target="1.7" />
+      <module name="xuebei-common" target="1.7" />
+      <module name="xuebei-im" target="1.7" />
+      <module name="Xuebei-mongodb" target="1.7" />
+      <module name="xuebei-mongodb" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
