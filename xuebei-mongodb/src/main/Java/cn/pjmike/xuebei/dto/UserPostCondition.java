@@ -12,10 +12,6 @@ import javax.validation.constraints.NotBlank;
  */
 public class UserPostCondition {
 
-    public interface UserSimpleView{}
-
-    public interface UserDetailView extends UserSimpleView{}
-
     @NotBlank(message = "邮箱不能为空")
     private String email;
     @NotBlank(message = "密码不能为空")

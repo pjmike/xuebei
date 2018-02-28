@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:/redis/redis.properties" ignore-unresolvable="true"/>
+
+    <!-- jedis连接池配置 -->
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--设置连接池中最大连接数,默认为8,一般要设置比8多一点，防止出现高并发下连接池中没有资源的情况-->
+        <property name="maxTotal" value="${redis.maxActive}"></property>
+        <!--设置连接池最大空闲连接数，默认为8-->
+        <property name="maxIdle" value="${redis.maxIdle}"></property>
+        <!--当连接池资源用尽时，设置调用者最大等待时间-->
+        <property name="maxWaitMillis" value="${redis.maxWait}"></property>
+        <!--向连接池借用连接时是否做连接有效性检查(ping),无效连接会被移除，每次借用多执行一次ping命令-->
+        <property name="testOnBorrow" value="${redis.testOnBorrow}"></property>
+    </bean>
+    <!-- redis服务中心 -->
+    <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:hostName="${redis.host}" p:password="${redis.password}"
+          p:port="${redis.port}" p:usePool="true" p:poolConfig-ref="poolConfig"/>
+    <!--redisTemplate模板配置-->
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate"
+          p:connectionFactory-ref="connectionFactory"/>
+    <!--缓存管理器的配置-->
+    <bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager" factory-method="create"
+          c:connectionFactory-ref="connectionFactory"/>
+</beans>

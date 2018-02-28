@@ -41,5 +41,5 @@ public interface UserService {
      * @param user
      * @return
      */
-    boolean verifyPwdAndFindUser(User user);
+    User findUser(User user);
 }

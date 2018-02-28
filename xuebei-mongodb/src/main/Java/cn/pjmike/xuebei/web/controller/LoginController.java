@@ -1,10 +1,13 @@
 package cn.pjmike.xuebei.web.controller;
 
 import cn.pjmike.xuebei.Jwt.JwtToken;
+import cn.pjmike.xuebei.bean.View;
 import cn.pjmike.xuebei.domain.User;
+import cn.pjmike.xuebei.dto.UserCondition;
 import cn.pjmike.xuebei.web.exception.UserException;
 import cn.pjmike.xuebei.web.service.UserService;
 import cn.pjmike.xuebei.utils.ResponseResult;
+import com.fasterxml.jackson.annotation.JsonView;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +17,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.mail.MessagingException;
 import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 注册登录逻辑
@@ -35,7 +40,7 @@ public class LoginController {
      * @return
      * @throws UnsupportedEncodingException
      */
-    @PostMapping(value = "/signup")
+    @PostMapping(value = "/sign_up")
     @ResponseBody
     @ApiOperation(value = "用户注册", notes = "用户注册接口", httpMethod = "POST")
     public ResponseResult<Object> signup(@Valid @RequestBody User user) throws UnsupportedEncodingException, MessagingException {
@@ -58,26 +63,34 @@ public class LoginController {
      * @return
      * @throws UnsupportedEncodingException
      */
-    @PostMapping(value = "/signin")
+    @PostMapping(value = "/sign_in")
     @ResponseBody
     @ApiOperation(value = "用户登录", notes = "用户登录接口", httpMethod = "POST")
     public ResponseResult<Object> signin(@Valid @RequestBody User user) throws UnsupportedEncodingException {
         responseResult = new ResponseResult<Object>();
         //进行验证登录操作
-        boolean result = userService.verifyPwdAndFindUser(user);
+        User result = userService.findUser(user);
         //获取用户token
         //设置过期时间3天
         long TTLMills = 1000 * 60 * 60 * 24 * 3;
         String token = JwtToken.createTokenWithTime(user.getEmail(), TTLMills);
         //进行判断，成功返回true,失败返回false
-        if (!result) {
+        if (result == null) {
             responseResult.setCode(1);
-            responseResult.setMsg("该用户不存在或者用户尚未激活");
+            responseResult.setMsg("该用户未注册");
             return responseResult;
         }
+        if (result.getState() == 1) {
+            responseResult.setCode(1);
+            responseResult.setMsg("该用户未激活，请激活");
+            return responseResult;
+        }
+        Map<String, Object> map = new HashMap<String,Object>(16);
+        map.put("token", token);
+        map.put("user", new UserCondition(result.getId(), result.getUsername(), result.getIcon()));
         responseResult.setCode(0);
-        responseResult.setMsg("该用户不存在或者用户尚未激活");
-        responseResult.setData(token);
+        responseResult.setMsg("登录成功");
+        responseResult.setData(map);
         return responseResult;
     }
 

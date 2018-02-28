@@ -3,6 +3,7 @@ package cn.pjmike.xuebei.web.controller;
 import cn.pjmike.xuebei.web.exception.NullException;
 import cn.pjmike.xuebei.web.exception.UserException;
 import cn.pjmike.xuebei.utils.ResponseResult;
+import org.omg.CORBA.OBJ_ADAPTER;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.mail.SendFailedException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
@@ -87,5 +89,19 @@ public class OwnerExceptionController {
         map.put("status", "1");
         map.put("message", e.getMessage());
         return map;
+    }
+
+    /**
+     * 对邮箱地址进行校验
+     *
+     * @param ex
+     * @return
+     */
+    @ExceptionHandler(SendFailedException.class)
+    public ResponseResult<Object> SendFailedExceptionHandler(SendFailedException ex) {
+        ResponseResult<Object> result = new ResponseResult<Object>();
+        result.setCode(1);
+        result.setMsg("该邮箱地址不存在");
+        return result;
     }
 }

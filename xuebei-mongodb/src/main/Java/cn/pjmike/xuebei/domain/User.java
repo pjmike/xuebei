@@ -1,5 +1,7 @@
 package cn.pjmike.xuebei.domain;
 
+import cn.pjmike.xuebei.bean.View;
+import com.fasterxml.jackson.annotation.JsonView;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.validator.constraints.Email;
@@ -8,6 +10,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.Pattern;
+
 
 /**
  * 用户类
@@ -15,7 +19,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author pjmike
  * @create 2018-01-29 23:04
  **/
-@Document
+@Document(collection = "users")
 public class User {
     @Id
     private String id;
@@ -31,6 +35,7 @@ public class User {
     private String email;
     @ApiModelProperty(value = "用户密码")
     @NotBlank(message = "密码不能为空")
+    @Pattern(regexp="(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,18}",message="密码必须是6~18位数字和字母的组合")
     private String password;
     @ApiModelProperty(value = "用户激活状态")
     private Integer state;
@@ -47,12 +52,16 @@ public class User {
         this.password = password;
     }
 
+    public User(String id) {
+        this.id = id;
+    }
+
     public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
     }
-
+    @JsonView(View.Summary.class)
     public String getIcon() {
         return icon;
     }
@@ -60,7 +69,7 @@ public class User {
     public void setIcon(String icon) {
         this.icon = icon;
     }
-
+    @JsonView(View.Summary.class)
     public String getId() {
         return id;
     }
@@ -68,7 +77,7 @@ public class User {
     public void setId(String id) {
         this.id = id;
     }
-
+    @JsonView(View.Summary.class)
     public String getUsername() {
         return username;
     }
@@ -76,7 +85,7 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
-
+    @JsonView(View.Summary.class)
     public String getGender() {
         return gender;
     }
@@ -92,7 +101,6 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public String getPassword() {
         return password;
     }

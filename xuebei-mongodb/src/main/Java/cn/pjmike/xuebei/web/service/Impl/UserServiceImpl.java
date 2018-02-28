@@ -80,18 +80,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean verifyPwdAndFindUser(User user) {
+    public User findUser(User user) {
         String md5pwd = MD5Util.getMD5(user.getPassword());
         User result = userDao.findUserByEmailAndPassword(user.getEmail(), md5pwd);
-        //判断是否有用户存在
-        if (result == null) {
-            return false;
-        }
-        //判断用户的激活状态，即state
-        if (result.getState() != 1) {
-            return false;
-        }
-        return true;
+        return result;
     }
 
     /**
