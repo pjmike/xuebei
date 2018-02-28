@@ -1,8 +1,6 @@
 package cn.pjmike.xuebei.web.chat.Model;
 
-import cn.pjmike.xuebei.domain.User;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
@@ -14,9 +12,19 @@ import java.io.Serializable;
  * @create 2018-02-25 18:14
  */
 @Document(collection = "groupRelation")
-public class UserGroupRelation implements Serializable{
+public class GroupRelation implements Serializable{
 
     private static final long serialVersionUID = -8199718395688170724L;
+
+    public GroupRelation(String groupId, String uuid, UserTemp user, Byte isManager, Byte isOwner, String alias) {
+        this.groupId = groupId;
+        this.uuid = uuid;
+        this.user = user;
+        this.isManager = isManager;
+        this.isOwner = isOwner;
+        this.alias = alias;
+    }
+
     @Id
     private String id;
     /**
@@ -33,7 +41,7 @@ public class UserGroupRelation implements Serializable{
     /**
      * 是否是管理员
      */
-    private Byte isMember;
+    private Byte isManager;
 
     /**
      * 是否是群主
@@ -52,12 +60,12 @@ public class UserGroupRelation implements Serializable{
         this.uuid = uuid;
     }
 
-    public Byte getIsMember() {
-        return isMember;
+    public Byte getIsManager() {
+        return isManager;
     }
 
-    public void setIsMember(Byte isMember) {
-        this.isMember = isMember;
+    public void setIsManager(Byte isManager) {
+        this.isManager = isManager;
     }
 
     public Byte getIsOwner() {
@@ -103,12 +111,12 @@ public class UserGroupRelation implements Serializable{
 
     @Override
     public String toString() {
-        return "UserGroupRelation{" +
+        return "GroupRelation{" +
                 "id='" + id + '\'' +
                 ", groupId='" + groupId + '\'' +
                 ", uuid='" + uuid + '\'' +
                 ", user=" + user +
-                ", isMember=" + isMember +
+                ", isManager=" + isManager +
                 ", isOwner=" + isOwner +
                 ", alias='" + alias + '\'' +
                 '}';

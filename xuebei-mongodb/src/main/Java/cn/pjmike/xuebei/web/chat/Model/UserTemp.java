@@ -19,6 +19,17 @@ public class UserTemp implements Serializable{
         this.id = id;
     }
 
+    public UserTemp(String id, String alias) {
+        this.id = id;
+        this.alias = alias;
+    }
+
+    public UserTemp(String id, String alias, String avatar) {
+        this.id = id;
+        this.alias = alias;
+        this.avatar = avatar;
+    }
+
     /**
      * 用户id
      */

@@ -1,13 +1,12 @@
-package cn.pjmike.xuebei.web.service.Impl;
+package cn.pjmike.xuebei.web.service.impl;
 
-import cn.pjmike.xuebei.domain.User;
 import cn.pjmike.xuebei.utils.ResponseResult;
 import cn.pjmike.xuebei.web.chat.Model.UserGroup;
-import cn.pjmike.xuebei.web.chat.Model.UserGroupRelation;
+import cn.pjmike.xuebei.web.chat.Model.GroupRelation;
 import cn.pjmike.xuebei.web.chat.Model.UserGroupInfo;
 import cn.pjmike.xuebei.web.chat.Model.UserTemp;
 import cn.pjmike.xuebei.web.dao.UserGroupDao;
-import cn.pjmike.xuebei.web.dao.UserGroupRelationDao;
+import cn.pjmike.xuebei.web.dao.GroupRelationDao;
 import cn.pjmike.xuebei.web.service.UserGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,11 +22,56 @@ public class UserGroupServiceImpl implements UserGroupService{
     @Autowired
     private UserGroupDao userGroupDao;
     @Autowired
-    private UserGroupRelationDao groupRelationDao;
+    private GroupRelationDao groupRelationDao;
 
     private ResponseResult<Object> baseResult;
 
     private Map<String, Object> map;
+
+    @Override
+    public ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar) {
+        baseResult = new ResponseResult<Object>();
+        map = new HashMap<String, Object>(16);
+        //建群
+        UserGroup userGroup = new UserGroup();
+        userGroup.setGroupName("群聊");
+        userGroup.setDate(System.currentTimeMillis());
+        userGroup.setOwner(uuid);
+        //本地创群
+        userGroupDao.insertGroup(userGroup);
+        map.put("group", userGroup);
+        //插入成员
+        List<GroupRelation> groupRelationList = new ArrayList<GroupRelation>();
+        //先插入群主,设置群主和管理员属性均为0
+        groupRelationList.add(new GroupRelation(userGroup.getGroupId(), uuid,new UserTemp(uuid, nickname, avatar), (byte) 0, (byte) 0, nickname));
+        for (UserTemp userTemp : userTemps) {
+            GroupRelation groupRelation = new GroupRelation(userGroup.getGroupId(), userTemp.getId(), userTemp, (byte) 1, (byte) 1, userTemp.getAlias());
+            groupRelationList.add(groupRelation);
+        }
+        groupRelationDao.insertBatch(groupRelationList);
+        //设置响应结果类,将用户信息和群信息都返回
+        map.put("users", groupRelationDao.selectGroupUser(userGroup));
+        baseResult.setData(map);
+        return baseResult;
+    }
+    @Override
+    public ResponseResult<Object> addMembers(String groupId,String uuid, String nickname, List<UserTemp> userTemps) {
+        baseResult = new ResponseResult<Object>();
+        map = new HashMap<String, Object>(16);
+        //插入成员
+        List<GroupRelation> groupRelationList = new ArrayList<GroupRelation>();
+        for (UserTemp userTemp : userTemps) {
+            GroupRelation groupRelation = new GroupRelation(groupId, userTemp.getId(), userTemp, (byte) 1, (byte) 1, userTemp.getAlias());
+            groupRelationList.add(groupRelation);
+        }
+        groupRelationDao.insertBatch(groupRelationList);
+        map.put("users", groupRelationDao.selectGroupUser(new UserGroup(groupId)));
+        //设置邀请人信息
+        map.put("inviter", new UserTemp(uuid, nickname));
+        baseResult.setData(map);
+        return baseResult;
+    }
+
     @Override
     public synchronized ResponseResult<Object> joinAroundGroup(UserGroupInfo groupInfo) {
         baseResult = new ResponseResult<Object>();
@@ -87,15 +131,19 @@ public class UserGroupServiceImpl implements UserGroupService{
     @Override
     public void quitAroudGroup(UserGroupInfo groupInfo) {
         UserGroup group = userGroupDao.findGroupByPwdAndLoc(groupInfo.getPassword(), groupInfo.getLocation());
-        groupRelationDao.deleteUserGroupRelation(group.getGroupId(), groupInfo.getUuid());
+        groupRelationDao.deleteGroupRelationByuidAndGid(group.getGroupId(), groupInfo.getUuid());
     }
     @Override
     public void getGroupQRCode() {
 
     }
     @Override
-    public UserGroup updateUserGroup(UserGroup group) {
+    public UserGroup updateUserGroupName(UserGroup group) {
         return userGroupDao.updateGroupName(group);
+    }
+    @Override
+    public UserGroup updateUserGroupAnnoucment(UserGroup group) {
+        return userGroupDao.updateGroupAnnouncement(group);
     }
 
     /**
@@ -105,7 +153,7 @@ public class UserGroupServiceImpl implements UserGroupService{
      * @param groupInfo
      */
     void insertGroupUser(UserGroup userGroup,UserGroupInfo groupInfo) {
-        List<UserGroupRelation> userGroupRelations = new ArrayList<UserGroupRelation>();
+        List<GroupRelation> groupRelations = new ArrayList<GroupRelation>();
         Map<String, String> map = new HashMap<String, String>(16);
         //将群id,进群人id,用户名，头像信息放入一个map中
         map.put("groupId", userGroup.getGroupId());
@@ -120,15 +168,15 @@ public class UserGroupServiceImpl implements UserGroupService{
         user.setAlias(groupInfo.getNickname());
         user.setAvatar(groupInfo.getAvatar());
         for (Map m : list) {
-            UserGroupRelation userGroupRelation = new UserGroupRelation();
-            userGroupRelation.setIsMember((byte) 1);
-            userGroupRelation.setIsOwner((byte) 1);
-            userGroupRelation.setUuid((String) m.get("uuid"));
-            userGroupRelation.setAlias((String) m.get("alias"));
-            userGroupRelation.setGroupId((String) m.get("groupId"));
-            userGroupRelation.setUser(user);
-            userGroupRelations.add(userGroupRelation);
+            GroupRelation groupRelation = new GroupRelation();
+            groupRelation.setIsManager((byte) 1);
+            groupRelation.setIsOwner((byte) 1);
+            groupRelation.setUuid((String) m.get("uuid"));
+            groupRelation.setAlias((String) m.get("alias"));
+            groupRelation.setGroupId((String) m.get("groupId"));
+            groupRelation.setUser(user);
+            groupRelations.add(groupRelation);
         }
-        groupRelationDao.insertBatch(userGroupRelations);
+        groupRelationDao.insertBatch(groupRelations);
     }
 }

@@ -11,6 +11,20 @@ public class ResponseResult<T> {
     private String msg;
     private T data;
 
+    public ResponseResult() {
+    }
+
+    public ResponseResult(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
+    public ResponseResult(int code, String msg, T data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+    }
+
     public int getCode() {
         return code;
     }

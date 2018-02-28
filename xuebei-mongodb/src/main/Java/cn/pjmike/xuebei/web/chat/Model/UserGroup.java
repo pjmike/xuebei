@@ -18,6 +18,13 @@ public class UserGroup implements Serializable{
 
     private static final long serialVersionUID = -5106758901091243815L;
 
+    public UserGroup() {
+    }
+
+    public UserGroup(String groupId) {
+        this.groupId = groupId;
+    }
+
     @Id
     private String groupId;
     /**

@@ -2,7 +2,7 @@ package cn.pjmike.xuebei.web.dao.impl;
 
 import cn.pjmike.xuebei.domain.User;
 import cn.pjmike.xuebei.web.chat.Model.UserGroup;
-import cn.pjmike.xuebei.web.chat.Model.UserGroupRelation;
+import cn.pjmike.xuebei.web.chat.Model.GroupRelation;
 import com.mongodb.BasicDBObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +38,7 @@ public class UserGroupDaoImplTest {
 
     @Test
     public void insertTestDBRef() {
-        UserGroupRelation groupRelation = new UserGroupRelation();
+        GroupRelation groupRelation = new GroupRelation();
         groupRelation.setAlias("sdf");
         User user = new User();
         user.setUsername("sfsdf");

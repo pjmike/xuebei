@@ -1,9 +1,7 @@
-package cn.pjmike.xuebei.web.service.Impl;
+package cn.pjmike.xuebei.web.service.impl;
 
-import cn.pjmike.xuebei.domain.User;
 import cn.pjmike.xuebei.utils.ResponseResult;
 import cn.pjmike.xuebei.web.chat.Model.UserGroupInfo;
-import cn.pjmike.xuebei.web.chat.Model.UserTemp;
 import cn.pjmike.xuebei.web.service.UserGroupService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
-
-import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

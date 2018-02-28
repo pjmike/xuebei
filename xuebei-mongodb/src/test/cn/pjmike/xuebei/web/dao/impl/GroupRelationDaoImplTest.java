@@ -1,10 +1,9 @@
 package cn.pjmike.xuebei.web.dao.impl;
 
-import cn.pjmike.xuebei.domain.User;
+import cn.pjmike.xuebei.web.chat.Model.GroupRelation;
 import cn.pjmike.xuebei.web.chat.Model.UserGroup;
-import cn.pjmike.xuebei.web.chat.Model.UserGroupRelation;
 import cn.pjmike.xuebei.web.chat.Model.UserTemp;
-import cn.pjmike.xuebei.web.dao.UserGroupRelationDao;
+import cn.pjmike.xuebei.web.dao.GroupRelationDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,30 +14,28 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @ContextConfiguration(locations = {"classpath:spring/applicationContext-*.xml"})
-public class UserGroupRelationDaoImplTest {
+public class GroupRelationDaoImplTest {
     @Autowired
-    private UserGroupRelationDao groupRelationDao;
+    private GroupRelationDao groupRelationDao;
     @Test
     public void insertBatch() throws Exception {
-        UserGroupRelation groupRelation1 = new UserGroupRelation();
+        GroupRelation groupRelation1 = new GroupRelation();
         groupRelation1.setGroupId("5a94fa7776f4d1513e367853");
         groupRelation1.setUser(new UserTemp("5a6f30d8cbfd00a87a00d545"));
-        UserGroupRelation groupRelation2 = new UserGroupRelation();
+        GroupRelation groupRelation2 = new GroupRelation();
         groupRelation2.setGroupId("5a94fa7776f4d1513e367853");
         groupRelation2.setUser(new UserTemp("5a72b4a451603d3910041f17"));
-        UserGroupRelation groupRelation3 = new UserGroupRelation();
+        GroupRelation groupRelation3 = new GroupRelation();
         groupRelation3.setGroupId("5a94fa7776f4d1513e367853");
         groupRelation3.setUser(new UserTemp("5a918a2676f4b9720ab39f7f"));
-        UserGroupRelation groupRelation4 = new UserGroupRelation();
+        GroupRelation groupRelation4 = new GroupRelation();
         groupRelation4.setGroupId("5a94fa7776f4d1513e367853");
         groupRelation4.setUser(new UserTemp("5a94bf2076f402090989454a"));
 
-        List<UserGroupRelation> groupRelations = new ArrayList<UserGroupRelation>();
+        List<GroupRelation> groupRelations = new ArrayList<GroupRelation>();
         groupRelations.add(groupRelation1);
         groupRelations.add(groupRelation2);
         groupRelations.add(groupRelation3);

@@ -1,6 +1,5 @@
 package cn.pjmike.xuebei.web.service;
 
-import cn.pjmike.xuebei.domain.User;
 import cn.pjmike.xuebei.utils.ResponseResult;
 import cn.pjmike.xuebei.web.chat.Model.UserGroupInfo;
 import cn.pjmike.xuebei.web.chat.Model.UserGroup;
@@ -15,6 +14,23 @@ import java.util.List;
  * @create 2018-02-25 21:48
  */
 public interface UserGroupService {
+    /**
+     * 创建群聊
+     *
+     * @param uuid
+     * @param nickname
+     * @param userTemps
+     * @param avatar
+     */
+    ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar);
+
+    /**
+     * 添加群成员
+     *
+     * @param uuid
+     * @param userTemps
+     */
+    ResponseResult<Object> addMembers(String groupId,String uuid,String nickname,List<UserTemp> userTemps);
     /**
      * 面对面建群
      *
@@ -48,7 +64,13 @@ public interface UserGroupService {
      *
      * @param group
      */
-    UserGroup updateUserGroup(UserGroup group);
+    UserGroup updateUserGroupName(UserGroup group);
 
-
+    /**
+     * 发布群公告
+     *
+     * @param group
+     * @return
+     */
+    UserGroup updateUserGroupAnnoucment(UserGroup group);
 }

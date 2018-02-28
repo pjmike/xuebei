@@ -1,4 +1,4 @@
-package cn.pjmike.xuebei.web.service.Impl;
+package cn.pjmike.xuebei.web.service.impl;
 
 import cn.pjmike.xuebei.Jwt.JwtToken;
 import cn.pjmike.xuebei.web.dao.UserDao;
