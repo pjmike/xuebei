@@ -7,7 +7,10 @@
     <!--启用缓存注解功能-->
     <cache:annotation-driven cache-manager="cacheManager"/>
     <context:component-scan base-package="cn.pjmike.xuebei">
-        <!--黑名单,排除掉COntroller注解-->
+        <!--排除掉Controller注解-->
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <!--排除掉ControllerAdvice注解-->
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
     </context:component-scan>
 </beans>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="xuebei (1):war">
-    <output-path>$PROJECT_DIR$/../Xuebei-mongodb/target</output-path>
-    <root id="archive" name="xuebei.war">
-      <element id="artifact" artifact-name="xuebei (1):war exploded" />
-    </root>
-  </artifact>
-</component>
