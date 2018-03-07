@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @create 2018-02-28 21:47
  */
 @RestController
-@RequestMapping("/api/groups/user")
+@RequestMapping("/groups/users")
 @Api(value = "群成员相关操作")
 public class GroupRelationController {
     @Autowired
@@ -30,7 +30,7 @@ public class GroupRelationController {
     @PutMapping(value = "/{id}/alias")
     @ApiOperation(value = "修改群昵称")
     public ResponseResult<Object> changeGroupAlias(@PathVariable("id") String id,@RequestBody GroupRelation groupRelation) {
-        return new ResponseResult<Object>(0, "修改成功", groupRelationService.changeGroupAlias(groupRelation));
+        return new ResponseResult<Object>(0, "修改成功", groupRelationService.changeGroupAlias(groupRelation).getAlias());
     }
 
     /**
@@ -52,9 +52,9 @@ public class GroupRelationController {
      * @param groupRelation
      * @return
      */
-    @PutMapping(value = "/{id}/Manager")
+    @PutMapping(value = "/{id}/manager")
     @ApiOperation(value = "设置群管理员")
-    public ResponseResult<Object> setManager(GroupRelation groupRelation) {
+    public ResponseResult<Object> setManager(@PathVariable("id") String id,@RequestBody GroupRelation groupRelation) {
         groupRelationService.setManager(groupRelation);
         return new ResponseResult<Object>(0, "设置管理员成功");
     }
@@ -65,9 +65,9 @@ public class GroupRelationController {
      * @param groupRelation
      * @return
      */
-    @DeleteMapping(value = "/{id}/Manager")
+    @DeleteMapping(value = "/{id}/manager")
     @ApiOperation(value = "取消管理员")
-    public ResponseResult<Object> deleteManager(GroupRelation groupRelation) {
+    public ResponseResult<Object> deleteManager(@PathVariable("id") String id,@RequestBody GroupRelation groupRelation) {
         groupRelationService.delManager(groupRelation);
         return new ResponseResult<Object>(0, "取消管理员成功");
     }

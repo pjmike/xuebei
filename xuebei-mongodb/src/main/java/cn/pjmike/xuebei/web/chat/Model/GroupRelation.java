@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.io.Serializable;
 
 /**
- * 朋友关系
+ * 群成员信息表
  *
  * @author pjmike
  * @create 2018-02-25 18:14

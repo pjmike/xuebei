@@ -24,7 +24,7 @@ import java.util.List;
  * @create 2018-02-25 21:27
  */
 @RestController
-@RequestMapping("/api/groups")
+@RequestMapping("/groups")
 @Api(value = "建群操作")
 public class UserGroupController {
     @Autowired
@@ -51,7 +51,7 @@ public class UserGroupController {
      * @param groupInfo
      * @return
      */
-    @PostMapping(value = "/memebers")
+    @PostMapping(value = "/members")
     @ApiOperation(value = "添加群成员")
     public ResponseResult<Object> addGroupMemebers(@RequestBody GroupInfo groupInfo) {
         ResponseResult<Object> result = userGroupService.addMembers(groupInfo.getGroupId(), groupInfo.getUuid(), groupInfo.getNickname(), groupInfo.getUserTemps());
@@ -85,7 +85,7 @@ public class UserGroupController {
     @ApiOperation(value = "修改群名称")
     public ResponseResult<Object> updateUserGroupName(@PathVariable("groupId") String groupId, @RequestBody UserGroup group) {
         UserGroup groupResult = userGroupService.updateUserGroupName(group);
-        return new ResponseResult<Object>(0, "修改群名称成功", groupResult);
+        return new ResponseResult<Object>(0, "修改群名称成功", groupResult.getGroupName());
     }
 
     /**
@@ -99,7 +99,7 @@ public class UserGroupController {
     @ApiOperation(value = "发布群公告")
     public ResponseResult<Object> updateUserGroupAnnoucement(@PathVariable("groupId") String groupId, @RequestBody UserGroup group) {
         UserGroup groupResult = userGroupService.updateUserGroupAnnoucment(group);
-        return new ResponseResult<Object>(0, "发布群公告成功", groupResult);
+        return new ResponseResult<Object>(0, "发布群公告成功", groupResult.getAnnoucement());
     }
 
     /**
@@ -109,7 +109,7 @@ public class UserGroupController {
      * @param groupInfo
      * @return
      */
-    @DeleteMapping(value = "/{uuid}")
+    @DeleteMapping(value = "/face/users/{uuid}")
     @ApiOperation(value = "退出面对面建群")
     public ResponseResult<Object> deleteUserGroupRelation(@PathVariable("uuid") String uuid, @RequestBody UserGroupInfo groupInfo) {
         userGroupService.quitAroudGroup(groupInfo);

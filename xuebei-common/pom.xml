@@ -215,6 +215,11 @@
       <artifactId>hibernate-validator</artifactId>
       <version>5.3.6.Final</version>
     </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.6</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>xuebei</finalName>

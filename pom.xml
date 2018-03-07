@@ -6,7 +6,6 @@
   <artifactId>xuebei</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>xuebei-im</module>
     <module>xuebei-mongodb</module>
     <module>xuebei-common</module>
   </modules>

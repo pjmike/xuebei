@@ -23,7 +23,7 @@ import java.util.List;
 public class UserGroupDaoImplTest {
     @Autowired
     private MongoTemplate mongoTemplate;
-    @Test
+//    @Test
     public void insertGroup() throws Exception {
         UserGroup userGroup = new UserGroup();
         userGroup.setGroupName("群里爱");
@@ -36,7 +36,7 @@ public class UserGroupDaoImplTest {
         System.out.println(userGroup);
     }
 
-    @Test
+//    @Test
     public void insertTestDBRef() {
         GroupRelation groupRelation = new GroupRelation();
         groupRelation.setAlias("sdf");
@@ -54,7 +54,7 @@ public class UserGroupDaoImplTest {
     /**
      * 查询指定字段
      */
-    @Test
+//    @Test
     public void testDBObject() {
         BasicDBObject dbObject = new BasicDBObject();
         dbObject.put("username", "pjmike");

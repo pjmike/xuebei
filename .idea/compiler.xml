@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xuebei-common" />
-        <module name="xuebei-im" />
         <module name="xuebei-mongo" />
         <module name="xuebei-mongodb" />
       </profile>

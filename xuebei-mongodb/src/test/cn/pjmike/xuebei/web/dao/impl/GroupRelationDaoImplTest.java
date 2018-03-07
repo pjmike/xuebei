@@ -20,7 +20,7 @@ import java.util.List;
 public class GroupRelationDaoImplTest {
     @Autowired
     private GroupRelationDao groupRelationDao;
-    @Test
+//    @Test
     public void insertBatch() throws Exception {
         GroupRelation groupRelation1 = new GroupRelation();
         groupRelation1.setGroupId("5a94fa7776f4d1513e367853");

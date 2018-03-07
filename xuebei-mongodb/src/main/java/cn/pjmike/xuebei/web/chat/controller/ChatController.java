@@ -2,12 +2,14 @@ package cn.pjmike.xuebei.web.chat.controller;
 
 import cn.pjmike.xuebei.web.chat.Model.BaseMessage;
 import cn.pjmike.xuebei.web.chat.Model.ChatMessage;
+import cn.pjmike.xuebei.web.chat.Model.UserRelation;
 import cn.pjmike.xuebei.web.service.UserService;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.security.Principal;
 import java.text.SimpleDateFormat;
@@ -45,7 +47,10 @@ public class ChatController {
 		baseMessage.setSender(principal.getName());
 		this.send(baseMessage);
 	}
-
+	@MessageMapping("/addFriend")
+	public void addFriend(@RequestBody UserRelation userRelation) {
+		template.convertAndSendToUser(userRelation.getUserAlias(), "/queue/friends", userRelation.getMsg());
+	}
 	private void send(BaseMessage message) {
 		message.setDate(new Date());
 		ChatMessage chatMessage = createMessage(message.getSender(), message.getContent());

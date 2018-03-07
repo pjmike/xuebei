@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xuebei-common:war">
+    <output-path>$PROJECT_DIR$/xuebei-common/target</output-path>
+    <root id="archive" name="xuebei.war">
+      <element id="artifact" artifact-name="xuebei-common:war exploded" />
+    </root>
+  </artifact>
+</component>

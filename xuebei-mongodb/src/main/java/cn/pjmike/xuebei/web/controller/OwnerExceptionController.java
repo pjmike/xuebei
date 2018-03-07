@@ -69,26 +69,19 @@ public class OwnerExceptionController {
     }   
     @ExceptionHandler(UnsupportedEncodingException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public Map<String, String> EncodingExceptionHandler(Exception e) {
-        Map<String, String> map = new HashMap<String, String>(16);
-        map.put("status", "1");
-        map.put("message", "系统编码错误");
-        return map;
+    public ResponseResult<Object> EncodingExceptionHandler(UnsupportedEncodingException e) {
+
+        return new ResponseResult<Object>(1,"系统编码错误");
     }
     @ExceptionHandler(IOException.class)
-    public Map<String, String> IOExceptionHandler(Exception e) {
-        Map<String, String> map = new HashMap<String, String>(16);
-        map.put("status", "1");
-        map.put("message", "编码错误");
-        return map;
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ResponseResult<Object> IOExceptionHandler(IOException e) {
+        return new ResponseResult<Object>(1,"读取文件错误");
     }
 
     @ExceptionHandler(UserException.class)
-    public Map<String, String> UserExceptionHandler(UserException e) {
-        Map<String, String> map = new HashMap<String, String>(16);
-        map.put("status", "1");
-        map.put("message", e.getMessage());
-        return map;
+    public ResponseResult<Object> UserExceptionHandler(UserException e) {
+        return new ResponseResult<Object>(1,e.getMessage());
     }
 
     /**

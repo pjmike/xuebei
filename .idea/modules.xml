@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/xuebei.iml" filepath="$PROJECT_DIR$/xuebei.iml" />
       <module fileurl="file://$PROJECT_DIR$/xuebei-common/xuebei-common.iml" filepath="$PROJECT_DIR$/xuebei-common/xuebei-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xuebei-im/xuebei-im.iml" filepath="$PROJECT_DIR$/xuebei-im/xuebei-im.iml" />
       <module fileurl="file://$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" filepath="$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" />
     </modules>
   </component>

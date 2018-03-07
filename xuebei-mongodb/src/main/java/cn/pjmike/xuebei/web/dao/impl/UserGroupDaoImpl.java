@@ -37,7 +37,6 @@ public class UserGroupDaoImpl implements UserGroupDao {
     public UserGroup updateGroupName(UserGroup group) {
         Update update = new Update();
         update.set("groupName", group.getGroupName());
-        update.set("annoucement", group.getAnnoucement());
         template.updateFirst(Query.query(Criteria.where("groupId").is(group.getGroupId())), update, "group");
         return group;
     }

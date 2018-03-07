@@ -1,8 +1,11 @@
 package cn.pjmike.xuebei.web.service;
 
 import cn.pjmike.xuebei.domain.User;
+import cn.pjmike.xuebei.domain.dto.UserPostCondition;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.mail.MessagingException;
+import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -16,7 +19,7 @@ public interface UserService {
      * @param user
      * @throws UnsupportedEncodingException
      */
-    boolean register(User user) throws UnsupportedEncodingException, MessagingException;
+    boolean register(UserPostCondition user, HttpServletRequest request) throws UnsupportedEncodingException, MessagingException;
 
     /**
      * 激活邮箱
@@ -42,4 +45,20 @@ public interface UserService {
      * @return
      */
     User findUser(User user);
+
+    /**
+     * 发送邮件
+     *
+     * @param email
+     * @param request
+     * @throws MessagingException
+     */
+    void sendMail(String email, HttpServletRequest request) throws MessagingException;
+
+    /**
+     * 修改密码
+     *
+     * @param user
+     */
+    void ChangeUserPassword(UserPostCondition user);
 }

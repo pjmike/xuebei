@@ -39,7 +39,8 @@ public class UserGroupServiceImpl implements UserGroupService{
         userGroup.setOwner(uuid);
         //本地创群
         userGroupDao.insertGroup(userGroup);
-        map.put("group", userGroup);
+        map.put("groupId", userGroup.getGroupId());
+        map.put("groupName", userGroup.getGroupName());
         //插入成员
         List<GroupRelation> groupRelationList = new ArrayList<GroupRelation>();
         //先插入群主,设置群主和管理员属性均为0
@@ -80,7 +81,8 @@ public class UserGroupServiceImpl implements UserGroupService{
         UserGroup userGroup = userGroupDao.findGroupByPwdAndLoc(groupInfo.getPassword(), groupInfo.getLocation());
         if (userGroup != null) {
             //将群信息放入map中
-            map.put("group", userGroup);
+            map.put("groupId", userGroup.getGroupId());
+            map.put("groupName", userGroup.getGroupName());
             //该群已存在
             //判断用户是否在群中
             if (groupRelationDao.selectByUuidAndGroupId(groupInfo.getUuid(), userGroup.getGroupId()) != null) {

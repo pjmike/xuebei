@@ -10,12 +10,20 @@ import javax.validation.constraints.NotBlank;
  */
 public class UserPostCondition {
 
-    @NotBlank(message = "邮箱不能为空")
+//    @NotBlank(message = "邮箱不能为空")
     private String email;
-    @NotBlank(message = "密码不能为空")
+//    @NotBlank(message = "密码不能为空")
     private String password;
+    private int code;
 
-    private int state;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
 
     public String getEmail() {
         return email;
@@ -33,11 +41,5 @@ public class UserPostCondition {
         this.password = password;
     }
 
-    public int getState() {
-        return state;
-    }
 
-    public void setState(int state) {
-        this.state = state;
-    }
 }

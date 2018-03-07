@@ -32,9 +32,14 @@ public class WebSocketStompConfig extends AbstractWebSocketMessageBrokerConfigur
      */
     @Override
     public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {
-        stompEndpointRegistry.addEndpoint("/marcopolo").withSockJS();
+        //注册一个STOMP的endpoint端点，并指定使用SockJS协议,前端通过这个端点与服务器建立websocket连接
+        stompEndpointRegistry.addEndpoint("/endpoint").withSockJS();
     }
 
+    /**
+     * MessageBrokerRegistry,配置消息代理
+     * @param registry
+     */
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         super.configureMessageBroker(registry);
@@ -44,7 +49,7 @@ public class WebSocketStompConfig extends AbstractWebSocketMessageBrokerConfigur
         registry.setApplicationDestinationPrefixes("/app");
     }
 
-    @Override
+ /*   @Override
     public void configureWebSocketTransport(WebSocketTransportRegistration registration) {
         registration.addDecoratorFactory(new WebSocketHandlerDecoratorFactory() {
             @Override
@@ -68,5 +73,5 @@ public class WebSocketStompConfig extends AbstractWebSocketMessageBrokerConfigur
             }
         });
         super.configureWebSocketTransport(registration);
-    }
+    }*/
 }
