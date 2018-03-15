@@ -8,6 +8,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author pjmike
  * @create 2018-02-28 21:47
@@ -30,7 +33,9 @@ public class GroupRelationController {
     @PutMapping(value = "/{id}/alias")
     @ApiOperation(value = "修改群昵称")
     public ResponseResult<Object> changeGroupAlias(@PathVariable("id") String id,@RequestBody GroupRelation groupRelation) {
-        return new ResponseResult<Object>(0, "修改成功", groupRelationService.changeGroupAlias(groupRelation).getAlias());
+        Map<String, String> map = new HashMap<String, String>(16);
+        map.put("groupName", groupRelationService.changeGroupAlias(groupRelation).getAlias());
+        return new ResponseResult<Object>(0, "修改成功",map );
     }
 
     /**

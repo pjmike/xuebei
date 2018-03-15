@@ -62,7 +62,7 @@ public class GroupRelationDaoImpl implements GroupRelationDao {
     public WriteResult changeGroupAlias(GroupRelation groupRelation) {
         Query query = Query.query(Criteria.where("groupId").is(groupRelation.getGroupId()).and("uuid").is(groupRelation.getUuid()));
         Update update = new Update();
-        update.set("user.$.alias", groupRelation.getAlias());
+        update.set("userRongCloud.$.alias", groupRelation.getAlias());
         return template.updateFirst(query, update, "groupRelation");
     }
     @Override

@@ -14,7 +14,7 @@ public interface UserRelationService {
      *
      * @param userRelation
      */
-    void addFriend(UserRelation userRelation);
+    void addFriend(UserRelation userRelation) throws Exception;
 
     /**
      * 确认加好友

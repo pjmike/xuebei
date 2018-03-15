@@ -119,4 +119,9 @@ public class UserServiceImpl implements UserService {
         update.set("password", MD5Util.getMD5(user.getPassword()));
         userDao.updateUser(query, update);
     }
+
+    @Override
+    public User findUserByEmail(String email) {
+        return userDao.findUserByEmail(email);
+    }
 }

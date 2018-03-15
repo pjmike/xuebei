@@ -19,7 +19,7 @@ public class JavaMailSend {
         sender.setHost("smtp.qq.com");
         sender.setUsername("1757752215@qq.com");
         //QQ邮箱需要授权码而不是密码
-        sender.setPassword("spsjrdkknbhabegb");
+        sender.setPassword("udzpotiivxfddgdi");
         Properties props = sender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.auth", "true");

@@ -4,15 +4,19 @@ F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\dao\impl
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\intercepter\AdminInterceptor.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\domain\UserDto.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\exception\NoPermissionException.java
+F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\service\impl\UserRelationServiceImpl.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\chat\controller\GroupRelationController.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\utils\View.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\service\impl\GroupRelationServiceImpl.java
+F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\dao\impl\UserRelationDaoImpl.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\exception\NullException.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\swagger2\SwaggerConfig.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\jwt\JwtToken.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\dao\UserGroupDao.java
+F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\chat\Model\UserRelation.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\chat\Model\GroupRelation.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\aop\HttpApectJ.java
+F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\dao\UserRelationDao.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\dao\impl\UserGroupDaoImpl.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\domain\Venue.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\service\UserGroupService.java
@@ -35,6 +39,7 @@ F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\chat\Mod
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\utils\ErrorCodeEnum.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\utils\MailUtil.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\utils\ResponseResult.java
+F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\service\UserRelationService.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\service\impl\UserGroupServiceImpl.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\chat\controller\UserGroupController.java
 F:\IDEAproject\xuebei\xuebei-mongodb\src\main\java\cn\pjmike\xuebei\web\controller\LoginController.java

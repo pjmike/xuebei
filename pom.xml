@@ -8,6 +8,7 @@
   <modules>
     <module>xuebei-mongodb</module>
     <module>xuebei-common</module>
+      <module>xuebei-im</module>
   </modules>
   <packaging>pom</packaging>
 

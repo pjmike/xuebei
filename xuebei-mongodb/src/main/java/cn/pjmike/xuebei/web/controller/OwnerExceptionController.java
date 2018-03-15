@@ -29,7 +29,6 @@ import java.util.Map;
 public class OwnerExceptionController {
     private ResponseResult<Object> result;
     @ExceptionHandler(NullException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseResult<Object> nullExceptionHandler(NullException ex) {
         result = new ResponseResult<Object>();
         result.setCode(1);
@@ -48,7 +47,7 @@ public class OwnerExceptionController {
     public ResponseResult<Object> handlerValidationException(MethodArgumentNotValidException ex) {
         result = new ResponseResult<Object>();
         result.setCode(1);
-        result.setMsg("校验失败");
+        result.setMsg("参数校验失败");
         result.setData(getErrors(ex.getBindingResult()));
         return result;
     }

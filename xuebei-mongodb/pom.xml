@@ -21,6 +21,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>com.pjmike</groupId>
+            <artifactId>xuebei-im</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>xuebei-mongodb</finalName>

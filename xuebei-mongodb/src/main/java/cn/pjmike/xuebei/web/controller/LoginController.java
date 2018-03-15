@@ -8,12 +8,19 @@ import cn.pjmike.xuebei.web.exception.NullException;
 import cn.pjmike.xuebei.web.exception.UserException;
 import cn.pjmike.xuebei.web.service.UserService;
 import cn.pjmike.xuebei.utils.ResponseResult;
+import io.rong.RongCloud;
+import io.rong.methods.user.UserRongCloud;
+import io.rong.models.Result;
+import io.rong.models.response.TokenResult;
+import io.rong.models.user.UserModel;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,10 +41,17 @@ import java.util.Map;
 @Controller
 @Api(value = "LoginController")
 public class LoginController {
+    /**
+     *设置过期时间3天
+     */
+    private long TTLMills = 1000 * 60 * 60 * 24 * 3;
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
     private ResponseResult<Object> responseResult;
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * 用户注册
      *
@@ -56,11 +70,11 @@ public class LoginController {
             throw new NullException("验证码已过期");
         }
         if ((Integer)code != user.getCode()) {
-            throw new UserException("注册码不匹配");
+            throw new UserException("验证码不匹配");
         }
         //注册用户操作
         if (!userService.register(user,request)) {
-            throw new UserException("该邮箱已经被注册了");
+            throw new UserException("该邮箱已存在");
         }
         return new ResponseResult<Object>(0,"注册成功");
     }
@@ -75,27 +89,55 @@ public class LoginController {
     @PostMapping(value = "/sign_in")
     @ResponseBody
     @ApiOperation(value = "用户登录", notes = "用户登录接口", httpMethod = "POST")
-    public ResponseResult<Object> signin(@Valid @RequestBody User user) throws UnsupportedEncodingException {
+    public ResponseResult<Object> signin(@Valid @RequestBody User user) throws Exception {
         responseResult = new ResponseResult<Object>();
         //进行验证登录操作
         User result = userService.findUser(user);
         //获取用户token
-        //设置过期时间3天
-        long TTLMills = 1000 * 60 * 60 * 24 * 3;
         String token = JwtToken.createTokenWithTime(user.getEmail(), TTLMills);
         //进行判断，成功返回true,失败返回false
         if (result == null) {
             responseResult.setCode(1);
-            responseResult.setMsg("该用户未注册");
+            responseResult.setMsg("该邮箱未注册");
             return responseResult;
         }
-        if (result.getState() == 1) {
-            responseResult.setCode(1);
-            responseResult.setMsg("该用户未激活，请激活");
-            return responseResult;
-        }
+
+        //注册融云
+        //TODO
+
+        RongCloud rongCloud = RongCloud.getInstance();
+        //自定义 api 地址方式
+        // RongCloud rongCloud = RongCloud.getInstance(appKey, appSecret,api);
+        UserRongCloud userRongCloud = rongCloud.userRongCloud;
+
+        /**
+         * API 文档: http://rongcloud.github.io/server-sdk-nodejs/docs/v1/user/user.html#register
+         *
+         * 注册用户，生成用户在融云的唯一身份标识 Token
+         */
+        UserModel userModel = new UserModel()
+                .setId(result.getId())
+                .setName(result.getUsername())
+                .setPortrait(result.getIcon());
+        TokenResult tokenResult = userRongCloud.register(userModel);
+        System.out.println("getToken:  " + tokenResult.toString());
+
+        /**
+         *
+         * API 文档: http://rongcloud.github.io/server-sdk-nodejs/docs/v1/user/user.html#refresh
+         *
+         * 刷新用户信息方法
+         */
+        Result refreshResult = userRongCloud.update(userModel);
+        System.out.println("refresh:  " + refreshResult.toString());
+        //将融云返回的唯一token放在redis数据库中
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        valueOperations.set(user.getId(), tokenResult.getToken());
+
+
         Map<String, Object> map = new HashMap<String,Object>(16);
         map.put("token", token);
+        map.put("cloud_token", tokenResult.getToken());
         map.put("user", new UserCondition(result.getId(), result.getUsername(), result.getIcon()));
         responseResult.setCode(0);
         responseResult.setMsg("登录成功");
@@ -162,4 +204,23 @@ public class LoginController {
         userService.ChangeUserPassword(user);
         return new ResponseResult<Object>(0,"修改成功");
     }
+
+    /**
+     * 验证邮箱是否被注册
+     *
+     * @param user
+     * @return
+     */
+    @PostMapping(value = "/registion")
+    public ResponseResult<Object> getUserByEmail(@RequestBody UserPostCondition user) {
+        if (StringUtils.isBlank(user.getEmail())) {
+            throw new NullException("邮箱不能为空");
+        }
+        if (userService.findUserByEmail(user.getEmail()) != null) {
+            return new ResponseResult<Object>(1, "该邮箱已存在", null);
+        } else {
+            return new ResponseResult<Object>(0, "该邮箱可注册", null);
+        }
+    }
+
 }

@@ -118,7 +118,7 @@ public class GroupRelation implements Serializable{
                 "id='" + id + '\'' +
                 ", groupId='" + groupId + '\'' +
                 ", uuid='" + uuid + '\'' +
-                ", user=" + user +
+                ", userRongCloud=" + user +
                 ", isManager=" + isManager +
                 ", isOwner=" + isOwner +
                 ", alias='" + alias + '\'' +

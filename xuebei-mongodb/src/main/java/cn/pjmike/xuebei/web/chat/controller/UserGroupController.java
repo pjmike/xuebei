@@ -15,7 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.xml.ws.Response;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 建群
@@ -54,6 +56,9 @@ public class UserGroupController {
     @PostMapping(value = "/members")
     @ApiOperation(value = "添加群成员")
     public ResponseResult<Object> addGroupMemebers(@RequestBody GroupInfo groupInfo) {
+        if (groupInfo.getUserTemps() == null) {
+            return new ResponseResult<Object>(1, "未添加群成员");
+        }
         ResponseResult<Object> result = userGroupService.addMembers(groupInfo.getGroupId(), groupInfo.getUuid(), groupInfo.getNickname(), groupInfo.getUserTemps());
         result.setCode(0);
         result.setMsg("建群成功");
@@ -85,7 +90,9 @@ public class UserGroupController {
     @ApiOperation(value = "修改群名称")
     public ResponseResult<Object> updateUserGroupName(@PathVariable("groupId") String groupId, @RequestBody UserGroup group) {
         UserGroup groupResult = userGroupService.updateUserGroupName(group);
-        return new ResponseResult<Object>(0, "修改群名称成功", groupResult.getGroupName());
+        Map<String, String> map = new HashMap<String, String>(16);
+        map.put("groupName", groupResult.getGroupName());
+        return new ResponseResult<Object>(0, "修改群名称成功",map);
     }
 
     /**
@@ -99,7 +106,9 @@ public class UserGroupController {
     @ApiOperation(value = "发布群公告")
     public ResponseResult<Object> updateUserGroupAnnoucement(@PathVariable("groupId") String groupId, @RequestBody UserGroup group) {
         UserGroup groupResult = userGroupService.updateUserGroupAnnoucment(group);
-        return new ResponseResult<Object>(0, "发布群公告成功", groupResult.getAnnoucement());
+        Map<String, String> map = new HashMap<String, String>(16);
+        map.put("annoucement", groupResult.getGroupName());
+        return new ResponseResult<Object>(0, "发布群公告成功", map);
     }
 
     /**

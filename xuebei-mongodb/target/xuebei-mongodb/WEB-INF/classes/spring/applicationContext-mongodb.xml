@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:mongodb/mongodb.properties" ignore-unresolvable="true"/>
     <!--mongo连接相关配置-->
-    <mongo:mongo-client id="mongo" replica-set="${mongo.hostport}" credentials="test:test@users">
+    <mongo:mongo-client id="mongo" replica-set="${mongo.hostport}" credentials="test:test@userInfos">
         <mongo:client-options
                 connections-per-host="${mongo.connectionsPerHost}"
                 threads-allowed-to-block-for-connection-multiplier="${mongo.threadsAllowedToBlockForConnectionMultiplier}"
@@ -17,7 +17,7 @@
         ></mongo:client-options>
     </mongo:mongo-client>
     <!-- 设置数据库名字-->
-    <mongo:db-factory id="mongoDbFactory" dbname="users" mongo-ref="mongo"/>
+    <mongo:db-factory id="mongoDbFactory" dbname="userInfos" mongo-ref="mongo"/>
     <!--mongodb的模板-->
     <bean id="mongodbTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>

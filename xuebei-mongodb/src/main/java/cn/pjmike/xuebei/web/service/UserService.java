@@ -61,4 +61,12 @@ public interface UserService {
      * @param user
      */
     void ChangeUserPassword(UserPostCondition user);
+
+    /**
+     * 查看用户是否存在
+     *
+     * @param email
+     * @return
+     */
+    User findUserByEmail(String email);
 }
