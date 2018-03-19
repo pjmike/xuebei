@@ -349,7 +349,7 @@ public class CommonUtil {
                 }else{
                     subkeys = keys;
                 }
-                Map<String,String[]> map = new HashMap<String, String[]>();
+                Map<String,String[]> map = new HashMap<String,String[]>();
                 map.put(key,subkeys.toArray(new String[subkeys.size()]));
                 return map;
             }catch(ClassCastException e){

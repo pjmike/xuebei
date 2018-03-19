@@ -2,7 +2,7 @@ package io.rong.exception;
 
 /**
  * Created with hc.
- * UserInfo: hc
+ * User: hc
  * Date: 17-12-19
  * Time: 下午4:45
  */
@@ -11,7 +11,7 @@ public abstract class RcloudException extends Exception{
      *
      */
     private static final long serialVersionUID = -700374663662873165L;
-    protected io.rong.exception.Error error = null;
+    protected Error error = null;
     public RcloudException (){
     }
 
@@ -27,7 +27,7 @@ public abstract class RcloudException extends Exception{
         super(message);
     }
 
-    public io.rong.exception.Error getError(){
+    public Error getError(){
         return error;
     }
 

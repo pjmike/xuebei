@@ -134,7 +134,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "UserRongCloud{" +
+        return "User{" +
                 "id='" + id + '\'' +
                 ", username='" + username + '\'' +
                 ", icon='" + icon + '\'' +

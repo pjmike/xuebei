@@ -16,7 +16,6 @@ io\rong\example\chatroom\BanExample.class
 io\rong\models\response\BlockUserResult.class
 io\rong\util\ParamNotNull.class
 io\rong\methods\chatroom\whitelist\Whitelist.class
-io\rong\methods\user\UserRongCloud.class
 io\rong\util\GsonUtil.class
 io\rong\example\chatroom\DemotionExample.class
 io\rong\models\message\SystemMessage.class
@@ -32,6 +31,7 @@ io\rong\methods\message\discussion\Discussion.class
 io\rong\models\user\UserModel.class
 io\rong\example\group\GagExample.class
 io\rong\models\message\PrivateMessage.class
+io\rong\models\User.class
 io\rong\models\response\BlockChatRoomUser.class
 io\rong\example\chatroom\BlockExample.class
 io\rong\methods\group\Group.class
@@ -81,6 +81,7 @@ io\rong\methods\chatroom\keepalive\Keepalive.class
 io\rong\models\group\GroupMember.class
 io\rong\util\HttpUtil.class
 io\rong\methods\message\_private\Private.class
+io\rong\methods\user\User.class
 io\rong\messages\ImgTextMessage.class
 io\rong\example\group\GroupExample.class
 io\rong\messages\TxtMessage.class
@@ -105,7 +106,6 @@ io\rong\messages\CustomTxtMessage.class
 io\rong\exception\Error.class
 io\rong\methods\chatroom\distribute\Distribute.class
 io\rong\util\CodeUtil.class
-io\rong\models\UserInfo.class
 io\rong\util\CommonUtil.class
 io\rong\methods\sensitive\SensitiveWord.class
 io\rong\util\RcloudServiceConstrants.class

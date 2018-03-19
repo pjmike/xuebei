@@ -2,7 +2,7 @@ package io.rong.exception;
 
 
 
-public class ParamException extends RcloudException{
+public class ParamException extends RcloudException {
 
     private static final long serialVersionUID = -5021603276540528761L;
 

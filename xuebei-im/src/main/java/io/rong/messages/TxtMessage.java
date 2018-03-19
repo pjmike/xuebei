@@ -16,10 +16,7 @@ public class TxtMessage extends BaseMessage {
 		this.content = content;
 		this.extra = extra;
 	}
-
-	public TxtMessage() {
-	}
-
+	
 	@Override
 	public String getType() {
 		return TYPE;

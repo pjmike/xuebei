@@ -3,7 +3,7 @@ package io.rong.exception;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("error")
-public class ParamError extends io.rong.exception.Error {
+public class ParamError extends Error {
 	public ParamError(int errorCode, String apiURL, String errorMessage) {
 		super(errorCode, errorCode, apiURL, errorMessage);
 	}

@@ -20,7 +20,7 @@ import java.net.URLEncoder;
  * */
 public class OnlineStatus {
     private static final String UTF8 = "UTF-8";
-    private static final String PATH = "userRongCloud/online-status";
+    private static final String PATH = "user/online-status";
     private String appKey;
     private String appSecret;
     private RongCloud rongCloud;
@@ -40,7 +40,7 @@ public class OnlineStatus {
      * 检查用户在线状态 方法（每秒钟限100次）
      * 请不要频繁循环调用此接口，而是选择合适的频率和时机调用，此接口设置了一定的频率限制。
      *
-     * url /userRongCloud/checkOnline
+     * url /user/checkOnline
      * docs http://www.rongcloud.cn/docs/server.html#user_check_online
      *
      * @param  user:用户 id(必传)
@@ -61,7 +61,7 @@ public class OnlineStatus {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/checkOnline.json", "application/x-www-form-urlencoded");
+                "/user/checkOnline.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (CheckOnlineResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.CHECK,HttpUtil.returnResult(conn)), CheckOnlineResult.class);

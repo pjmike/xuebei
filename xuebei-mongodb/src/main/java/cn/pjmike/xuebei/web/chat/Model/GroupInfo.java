@@ -14,16 +14,18 @@ public class GroupInfo {
     private String avatar;
     private List<UserTemp> userTemps;
     private String groupId;
+    private String groupName;
 
     public GroupInfo() {
     }
 
-    public GroupInfo(String uuid, String nickname, String avatar, List<UserTemp> userTemps, String groupId) {
+    public GroupInfo(String uuid, String nickname, String avatar, List<UserTemp> userTemps, String groupId, String groupName) {
         this.uuid = uuid;
         this.nickname = nickname;
         this.avatar = avatar;
         this.userTemps = userTemps;
         this.groupId = groupId;
+        this.groupName = groupName;
     }
 
     public String getUuid() {
@@ -64,5 +66,13 @@ public class GroupInfo {
 
     public void setGroupId(String groupId) {
         this.groupId = groupId;
+    }
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 }

@@ -49,7 +49,7 @@ public class JsonUtil {
     }
     public static void main(String[] args){
         try {
-           System.out.println((String)getJsonObject("group","/verify.json"));
+           getJsonObject("group","/verify.json");
         } catch (IOException e) {
             e.printStackTrace();
         }

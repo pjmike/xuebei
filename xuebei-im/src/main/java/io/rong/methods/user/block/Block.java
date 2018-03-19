@@ -23,7 +23,7 @@ import java.net.URLEncoder;
  * */
 public class Block {
     private static final String UTF8 = "UTF-8";
-    private static final String PATH = "userRongCloud/block";
+    private static final String PATH = "user/block";
     private String appKey;
     private String appSecret;
     private RongCloud rongCloud;
@@ -62,7 +62,7 @@ public class Block {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/block.json", "application/x-www-form-urlencoded");
+                "/user/block.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);
@@ -90,7 +90,7 @@ public class Block {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/unblock.json", "application/x-www-form-urlencoded");
+                "/user/unblock.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.REMOVE,HttpUtil.returnResult(conn)), ResponseResult.class);
@@ -110,7 +110,7 @@ public class Block {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/block/query.json", "application/x-www-form-urlencoded");
+                "/user/block/query.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (BlockUserResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.GETLIST,HttpUtil.returnResult(conn)), BlockUserResult.class);

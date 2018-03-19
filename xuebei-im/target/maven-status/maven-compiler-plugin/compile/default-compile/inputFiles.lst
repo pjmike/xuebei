@@ -31,7 +31,6 @@ F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\messages\CmdMsgMessage.jav
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\CheckOnlineResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\chatroom\block\Block.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\BlockUserResult.java
-F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\user\UserRongCloud.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\chatroom\demotion\Demotion.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\SMSImageCodeResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\user\UserModel.java
@@ -98,9 +97,9 @@ F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\messages\ContactNtfMessage
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\ChatroomQueryResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\CheckChatRoomUserResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\message\system\MsgSystem.java
-F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\UserInfo.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\ListWordfilterResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\messages\LBSMessage.java
+F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\user\User.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\messages\InfoNtfMessage.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\chatroom\whitelist\MessageWhiteList.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\group\UserGroup.java
@@ -110,6 +109,7 @@ F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\methods\user\blacklist\Bla
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\GagChatRoomUser.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\BlackList.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\example\sensitive\SensitiveExample.java
+F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\User.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\message\SystemMessage.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\models\response\ChatroomDemotionMsgResult.java
 F:\IDEAproject\xuebei\xuebei-im\src\main\java\io\rong\messages\ImgMessage.java

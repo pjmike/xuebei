@@ -1,5 +1,6 @@
 package cn.pjmike.xuebei.web.service.impl;
 
+import cn.pjmike.xuebei.rongcloud.RongcloudUtils;
 import cn.pjmike.xuebei.utils.ResponseResult;
 import cn.pjmike.xuebei.web.chat.Model.UserGroup;
 import cn.pjmike.xuebei.web.chat.Model.GroupRelation;
@@ -7,7 +8,16 @@ import cn.pjmike.xuebei.web.chat.Model.UserGroupInfo;
 import cn.pjmike.xuebei.web.chat.Model.UserTemp;
 import cn.pjmike.xuebei.web.dao.UserGroupDao;
 import cn.pjmike.xuebei.web.dao.GroupRelationDao;
+import cn.pjmike.xuebei.web.exception.NullException;
 import cn.pjmike.xuebei.web.service.UserGroupService;
+import com.alibaba.fastjson.JSON;
+import io.rong.RongCloud;
+import io.rong.methods.group.Group;
+import io.rong.models.Result;
+import io.rong.models.group.GroupMember;
+import io.rong.models.group.GroupModel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,20 +37,43 @@ public class UserGroupServiceImpl implements UserGroupService{
     private ResponseResult<Object> baseResult;
 
     private Map<String, Object> map;
-
+    private Logger logger = LoggerFactory.getLogger(UserGroupServiceImpl.class);
     @Override
-    public ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar) {
-        baseResult = new ResponseResult<Object>();
+    public ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar) throws Exception {
+
+        if (userTemps == null) {
+            throw new NullException("邀请人员不能为空");
+        }
         map = new HashMap<String, Object>(16);
         //建群
         UserGroup userGroup = new UserGroup();
         userGroup.setGroupName("群聊");
         userGroup.setDate(System.currentTimeMillis());
         userGroup.setOwner(uuid);
+
+
         //本地创群
         userGroupDao.insertGroup(userGroup);
         map.put("groupId", userGroup.getGroupId());
         map.put("groupName", userGroup.getGroupName());
+
+
+
+        //融云建群
+        RongCloud rongCloud = RongCloud.getInstance();
+        Group Group = rongCloud.group;
+
+        GroupMember[] members = new GroupMember[userTemps.size()];
+        for (int i = 0; i < userTemps.size(); i++) {
+            members[i] = new GroupMember().setId(userTemps.get(i).getId());
+        }
+        GroupModel group = new GroupModel()
+                .setId(userGroup.getGroupId())
+                .setMembers(members)
+                .setName(userGroup.getGroupName());
+
+        Result groupCreateResult = (Result)Group.create(group);
+        logger.info("group create result:  " + groupCreateResult.toString());
         //插入成员
         List<GroupRelation> groupRelationList = new ArrayList<GroupRelation>();
         //先插入群主,设置群主和管理员属性均为0
@@ -56,7 +89,14 @@ public class UserGroupServiceImpl implements UserGroupService{
         return baseResult;
     }
     @Override
-    public ResponseResult<Object> addMembers(String groupId,String uuid, String nickname, List<UserTemp> userTemps) {
+    public ResponseResult<Object> addMembers(String groupId,String groupName,String uuid, String nickname, List<UserTemp> userTemps) throws Exception {
+        //融云邀请好友入群
+        RongCloud rongCloud = RongCloud.getInstance();
+        GroupModel group = RongcloudUtils.aboutGroupCreate(groupId, groupName, userTemps);
+        Result groupInviteResult = (Result)rongCloud.group.invite(group);
+        logger.info("invite:  " + groupInviteResult.toString());
+
+        //本地邀请
         baseResult = new ResponseResult<Object>();
         map = new HashMap<String, Object>(16);
         //插入成员
@@ -74,12 +114,25 @@ public class UserGroupServiceImpl implements UserGroupService{
     }
 
     @Override
-    public synchronized ResponseResult<Object> joinAroundGroup(UserGroupInfo groupInfo) {
+    public synchronized ResponseResult<Object> joinAroundGroup(UserGroupInfo groupInfo) throws Exception {
+        RongCloud rongCloud = RongCloud.getInstance();
+        Group groupRongCloud = rongCloud.group;
+        GroupMember[] members;
         baseResult = new ResponseResult<Object>();
         map = new HashMap<String, Object>(16);
         //寻找目标位置10米内是否有群存在
         UserGroup userGroup = userGroupDao.findGroupByPwdAndLoc(groupInfo.getPassword(), groupInfo.getLocation());
         if (userGroup != null) {
+            //融云加入
+            members = new GroupMember[]{new GroupMember().setId(groupInfo.getUuid())};
+            GroupModel group = new GroupModel()
+                    .setId(userGroup.getGroupId())
+                    .setMembers(members)
+                    .setName(userGroup.getGroupName());
+            Result groupJoinResult = (Result)groupRongCloud.join(group);
+            logger.info("join:  " + groupJoinResult.toString());
+
+            //本地加入
             //将群信息放入map中
             map.put("groupId", userGroup.getGroupId());
             map.put("groupName", userGroup.getGroupName());
@@ -100,7 +153,7 @@ public class UserGroupServiceImpl implements UserGroupService{
             baseResult.setData(map);
             return baseResult;
         } else {
-            //TODO
+
             //建群
             UserGroup group = new UserGroup();
             group.setPassword(groupInfo.getPassword());
@@ -120,6 +173,14 @@ public class UserGroupServiceImpl implements UserGroupService{
 
             baseResult.setData(map);
 
+            //融云加群
+            members = new GroupMember[]{new GroupMember().setId(groupInfo.getUuid())};
+            GroupModel groupRong = new GroupModel()
+                    .setId(result.getGroupId())
+                    .setMembers(members)
+                    .setName(result.getGroupName());
+            Result groupCreateResult = groupRongCloud.create(groupRong);
+            logger.info("group create result: "+ groupCreateResult.toString());
             return baseResult;
         }
     }

@@ -27,7 +27,7 @@ public class BlockExample {
         //自定义 api 地址方式
         // RongCloud rongCloud = RongCloud.getInstance(appKey, appSecret,api);
 
-        Block Block = rongCloud.userRongCloud.block;
+        Block Block = rongCloud.user.block;
 
         /**
          *

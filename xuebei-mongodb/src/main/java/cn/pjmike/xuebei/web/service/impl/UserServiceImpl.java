@@ -4,10 +4,12 @@ import cn.pjmike.xuebei.domain.dto.UserPostCondition;
 import cn.pjmike.xuebei.jwt.JwtToken;
 import cn.pjmike.xuebei.web.dao.UserDao;
 import cn.pjmike.xuebei.domain.User;
+import cn.pjmike.xuebei.web.exception.UserException;
 import cn.pjmike.xuebei.web.service.UserService;
 import cn.pjmike.xuebei.utils.MD5Util;
 
 import com.auth0.jwt.interfaces.Claim;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -80,8 +82,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findUser(User user) {
-        String md5pwd = MD5Util.getMD5(user.getPassword());
-        User result = userDao.findUserByEmailAndPassword(user.getEmail(), md5pwd);
+        User result = userDao.findUserByEmail(user.getEmail());
         return result;
     }
 

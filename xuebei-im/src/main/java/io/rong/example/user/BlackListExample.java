@@ -29,7 +29,7 @@ public class BlackListExample {
         //自定义 api 地址方式
         // RongCloud rongCloud = RongCloud.getInstance(appKey, appSecret,api);
 
-        Blacklist BlackList = rongCloud.userRongCloud.blackList;
+        Blacklist BlackList = rongCloud.user.blackList;
 
         /**
          *

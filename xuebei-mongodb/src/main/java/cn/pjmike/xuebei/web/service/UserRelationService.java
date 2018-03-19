@@ -21,7 +21,7 @@ public interface UserRelationService {
      *
      * @param userRelation
      */
-    void comfirmFriend(UserRelation userRelation);
+    void comfirmFriend(UserRelation userRelation) throws Exception;
 
     /**
      * 拒绝加好友
@@ -29,5 +29,5 @@ public interface UserRelationService {
      * @param userUuid
      * @param friendUuid
      */
-    void rejectFriend(String userUuid, String friendUuid);
+    void rejectFriend(String userUuid, String friendUuid) throws Exception;
 }

@@ -9,7 +9,7 @@ import io.rong.util.GsonUtil;
 
 /**
  * Created with IntelliJ IDEA.
- * UserInfo: srp
+ * User: srp
  * Date: 14-3-17
  * Time: 下午6:12
  */

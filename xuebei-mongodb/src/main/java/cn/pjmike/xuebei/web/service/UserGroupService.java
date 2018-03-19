@@ -22,7 +22,7 @@ public interface UserGroupService {
      * @param userTemps
      * @param avatar
      */
-    ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar);
+    ResponseResult<Object> createGroup(String uuid, String nickname, List<UserTemp> userTemps, String avatar) throws Exception;
 
     /**
      * 添加群成员
@@ -30,14 +30,14 @@ public interface UserGroupService {
      * @param uuid
      * @param userTemps
      */
-    ResponseResult<Object> addMembers(String groupId,String uuid,String nickname,List<UserTemp> userTemps);
+    ResponseResult<Object> addMembers(String groupId,String groupName,String uuid,String nickname,List<UserTemp> userTemps) throws Exception;
     /**
      * 面对面建群
      *
      * @param groupInfo
      * @return
      */
-    ResponseResult<Object> joinAroundGroup(UserGroupInfo groupInfo);
+    ResponseResult<Object> joinAroundGroup(UserGroupInfo groupInfo) throws Exception;
 
     /**
      * 获取面对面建群人消息

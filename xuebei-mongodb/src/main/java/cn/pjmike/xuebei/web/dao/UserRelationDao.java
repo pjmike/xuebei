@@ -13,4 +13,18 @@ public interface UserRelationDao {
      * @param userRelation
      */
     void addFriend(UserRelation userRelation);
+
+    /**
+     * 删除好友
+     *
+     * @param friendId
+     */
+    void deleteFriend(String userId,String friendId);
+
+    /**
+     * 更新好友确认状态
+     *
+     * @param relation
+     */
+    void confirmFriend(UserRelation relation);
 }

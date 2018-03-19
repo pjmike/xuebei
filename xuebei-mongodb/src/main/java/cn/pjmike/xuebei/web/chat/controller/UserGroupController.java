@@ -40,7 +40,7 @@ public class UserGroupController {
      */
     @PostMapping
     @ApiOperation(value = "创建群聊")
-    public ResponseResult<Object> createGroup(@RequestBody GroupInfo groupInfo) {
+    public ResponseResult<Object> createGroup(@RequestBody GroupInfo groupInfo) throws Exception {
         ResponseResult<Object> result = userGroupService.createGroup(groupInfo.getUuid(), groupInfo.getNickname(), groupInfo.getUserTemps(), groupInfo.getAvatar());
         result.setCode(0);
         result.setMsg("建群成功");
@@ -55,11 +55,11 @@ public class UserGroupController {
      */
     @PostMapping(value = "/members")
     @ApiOperation(value = "添加群成员")
-    public ResponseResult<Object> addGroupMemebers(@RequestBody GroupInfo groupInfo) {
+    public ResponseResult<Object> addGroupMemebers(@RequestBody GroupInfo groupInfo) throws Exception {
         if (groupInfo.getUserTemps() == null) {
             return new ResponseResult<Object>(1, "未添加群成员");
         }
-        ResponseResult<Object> result = userGroupService.addMembers(groupInfo.getGroupId(), groupInfo.getUuid(), groupInfo.getNickname(), groupInfo.getUserTemps());
+        ResponseResult<Object> result = userGroupService.addMembers(groupInfo.getGroupId(),groupInfo.getGroupName(), groupInfo.getUuid(), groupInfo.getNickname(), groupInfo.getUserTemps());
         result.setCode(0);
         result.setMsg("建群成功");
         return result;

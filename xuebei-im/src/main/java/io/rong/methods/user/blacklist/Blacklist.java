@@ -24,7 +24,7 @@ import java.net.URLEncoder;
 public class Blacklist {
 
     private static final String UTF8 = "UTF-8";
-    private static final String PATH = "userRongCloud/blacklist";
+    private static final String PATH = "user/blacklist";
     private String appKey;
     private String appSecret;
     private RongCloud rongCloud;
@@ -66,7 +66,7 @@ public class Blacklist {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/blacklist/add.json", "application/x-www-form-urlencoded");
+                "/user/blacklist/add.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);
@@ -92,7 +92,7 @@ public class Blacklist {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/blacklist/query.json", "application/x-www-form-urlencoded");
+                "/user/blacklist/query.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (BlackListResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.GETLIST,HttpUtil.returnResult(conn)), BlackListResult.class);
@@ -122,7 +122,7 @@ public class Blacklist {
         }
 
         HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret,
-                "/userRongCloud/blacklist/remove.json", "application/x-www-form-urlencoded");
+                "/user/blacklist/remove.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.REMOVE,HttpUtil.returnResult(conn)), ResponseResult.class);

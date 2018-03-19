@@ -16,7 +16,7 @@ import java.net.URLEncoder;
 
 public class User {
     private static final String UTF8 = "UTF-8";
-    private static final String PATH = "chatroom/whitelist/userRongCloud";
+    private static final String PATH = "chatroom/whitelist/user";
     private String appKey;
     private String appSecret;
     private RongCloud rongCloud;
@@ -42,7 +42,7 @@ public class User {
     public ResponseResult add(ChatroomModel chatroom) throws Exception {
 
         if (chatroom == null) {
-            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/userRongCloud/add", "Paramer 'chatroom' is required");
+            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/user/add", "Paramer 'chatroom' is required");
         }
 
         String message = CommonUtil.checkFiled(chatroom,PATH, CheckMethod.ADD);
@@ -62,7 +62,7 @@ public class User {
             body = body.substring(1, body.length());
         }
 
-        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/userRongCloud/whitelist/add.json", "application/x-www-form-urlencoded");
+        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/user/whitelist/add.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);
@@ -76,7 +76,7 @@ public class User {
      **/
     public ResponseResult remove(ChatroomModel chatroom) throws Exception {
         if (chatroom == null) {
-            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/userRongCloud/remove", "Paramer 'chatroom' is required");
+            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/user/remove", "Paramer 'chatroom' is required");
         }
 
         String message = CommonUtil.checkFiled(chatroom,PATH, CheckMethod.ADD);
@@ -97,7 +97,7 @@ public class User {
             body = body.substring(1, body.length());
         }
 
-        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/userRongCloud/whitelist/remove.json", "application/x-www-form-urlencoded");
+        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/user/whitelist/remove.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);
@@ -111,7 +111,7 @@ public class User {
      **/
     public ResponseResult getList(ChatroomModel chatroom) throws Exception {
         if (chatroom == null) {
-            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/userRongCloud/getList", "Paramer 'chatroom' is required");
+            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/whitelist/user/getList", "Paramer 'chatroom' is required");
         }
 
         String message = CommonUtil.checkFiled(chatroom,PATH,CheckMethod.ADD);
@@ -127,7 +127,7 @@ public class User {
             body = body.substring(1, body.length());
         }
 
-        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/userRongCloud/whitelist/query.json", "application/x-www-form-urlencoded");
+        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/user/whitelist/query.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);

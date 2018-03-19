@@ -13,7 +13,7 @@ import io.rong.methods.group.Group;
 import io.rong.methods.message.Message;
 import io.rong.methods.sensitive.SensitiveWord;
 import io.rong.methods.sensitive.Wordfilter;
-import io.rong.methods.user.UserRongCloud;
+import io.rong.methods.user.User;
 import io.rong.util.HostType;
 
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,7 +22,7 @@ public class RongCloud {
 
 	private static ConcurrentHashMap<String, RongCloud> rongCloud = new ConcurrentHashMap<String, RongCloud>();
 
-	public UserRongCloud userRongCloud;
+	public User user;
 	public Message message;
 	public Wordfilter wordfilter;
 	public SensitiveWord sensitiveword;
@@ -31,12 +31,10 @@ public class RongCloud {
 	public Conversation conversation;
 	private HostType apiHostType = new HostType("http://api.cn.ronghub.com");
 	private HostType smsHostType = new HostType("http://api.sms.ronghub.com");
+	private static String appKey = "25wehl3u2sjuw";
 
-    private static String appKey = "25wehl3u2sjuw";
-
-    private static String appSecret = "xDobXIDLyI6y1";
-
-    public HostType getApiHostType() {
+	private static String appSecret = "xDobXIDLyI6y1";
+	public HostType getApiHostType() {
 		return apiHostType;
 	}
 
@@ -54,8 +52,8 @@ public class RongCloud {
 	}
 
 	private RongCloud(String appKey, String appSecret) {
-		userRongCloud = new UserRongCloud(appKey, appSecret);
-		userRongCloud.setRongCloud(this);
+		user = new User(appKey, appSecret);
+		user.setRongCloud(this);
 		message = new Message(appKey, appSecret);
 		message.setRongCloud(this);
 		wordfilter = new Wordfilter(appKey, appSecret);
@@ -70,7 +68,12 @@ public class RongCloud {
 		conversation.setRongCloud(this);
 
 	}
-
+	public static RongCloud getInstance() {
+		if (null == rongCloud.get(appKey)) {
+			rongCloud.putIfAbsent(appKey, new RongCloud(appKey, appSecret));
+		}
+		return rongCloud.get(appKey);
+	}
 	public static RongCloud getInstance(String appKey, String appSecret) {
 		if (null == rongCloud.get(appKey)) {
 			rongCloud.putIfAbsent(appKey, new RongCloud(appKey, appSecret));
@@ -78,12 +81,6 @@ public class RongCloud {
 		return rongCloud.get(appKey);
 	}
 
-    public static RongCloud getInstance() {
-        if (null == rongCloud.get(appKey)) {
-            rongCloud.putIfAbsent(appKey, new RongCloud(appKey, appSecret));
-        }
-        return rongCloud.get(appKey);
-    }
 	public static RongCloud getInstance(String appKey, String appSecret,String api) {
 		if (null == rongCloud.get(appKey)) {
 			RongCloud rc =  	new RongCloud(appKey, appSecret);

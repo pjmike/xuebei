@@ -2,14 +2,14 @@ package cn.pjmike.xuebei.web.controller;
 
 import cn.pjmike.xuebei.domain.dto.UserPostCondition;
 import cn.pjmike.xuebei.jwt.JwtToken;
-import cn.pjmike.xuebei.domain.User;
 import cn.pjmike.xuebei.domain.dto.UserCondition;
+import cn.pjmike.xuebei.utils.MD5Util;
 import cn.pjmike.xuebei.web.exception.NullException;
 import cn.pjmike.xuebei.web.exception.UserException;
 import cn.pjmike.xuebei.web.service.UserService;
 import cn.pjmike.xuebei.utils.ResponseResult;
 import io.rong.RongCloud;
-import io.rong.methods.user.UserRongCloud;
+import io.rong.methods.user.User;
 import io.rong.models.Result;
 import io.rong.models.response.TokenResult;
 import io.rong.models.user.UserModel;
@@ -67,7 +67,7 @@ public class LoginController {
         logger.info("session的过期时间："+session.getMaxInactiveInterval());
         Object code = session.getAttribute(user.getEmail());
         if (code == null) {
-            throw new NullException("验证码已过期");
+            throw new UserException("验证码已过期");
         }
         if ((Integer)code != user.getCode()) {
             throw new UserException("验证码不匹配");
@@ -89,50 +89,44 @@ public class LoginController {
     @PostMapping(value = "/sign_in")
     @ResponseBody
     @ApiOperation(value = "用户登录", notes = "用户登录接口", httpMethod = "POST")
-    public ResponseResult<Object> signin(@Valid @RequestBody User user) throws Exception {
+    public ResponseResult<Object> signin(@Valid @RequestBody cn.pjmike.xuebei.domain.User user) throws Exception {
         responseResult = new ResponseResult<Object>();
         //进行验证登录操作
-        User result = userService.findUser(user);
+        cn.pjmike.xuebei.domain.User result = userService.findUser(user);
+        //验证密码是否正确
+        String md5pwd = MD5Util.getMD5(user.getPassword());
+        if (!StringUtils.equals(md5pwd, result.getPassword())) {
+            throw new UserException("密码错误");
+        }
         //获取用户token
         String token = JwtToken.createTokenWithTime(user.getEmail(), TTLMills);
         //进行判断，成功返回true,失败返回false
         if (result == null) {
-            responseResult.setCode(1);
-            responseResult.setMsg("该邮箱未注册");
-            return responseResult;
+            throw new NullException("该邮箱未注册");
         }
-
+        System.out.println(result.getId());
         //注册融云
         //TODO
-
         RongCloud rongCloud = RongCloud.getInstance();
-        //自定义 api 地址方式
-        // RongCloud rongCloud = RongCloud.getInstance(appKey, appSecret,api);
-        UserRongCloud userRongCloud = rongCloud.userRongCloud;
+        User userRongCloud = rongCloud.user;
 
-        /**
-         * API 文档: http://rongcloud.github.io/server-sdk-nodejs/docs/v1/user/user.html#register
-         *
-         * 注册用户，生成用户在融云的唯一身份标识 Token
-         */
+        //注册用户，生成用户在融云的唯一身份标识 Token
         UserModel userModel = new UserModel()
-                .setId(result.getId())
-                .setName(result.getUsername())
-                .setPortrait(result.getIcon());
+                .setId("sfsdfsdfsd")
+                .setName("pjmike")
+                .setPortrait("http://osvtz719h.bkt.clouddn.com/lADPBbCc1SjLjH_NAwDNAwA_768_768.jpg");
         TokenResult tokenResult = userRongCloud.register(userModel);
         System.out.println("getToken:  " + tokenResult.toString());
 
-        /**
-         *
-         * API 文档: http://rongcloud.github.io/server-sdk-nodejs/docs/v1/user/user.html#refresh
-         *
-         * 刷新用户信息方法
-         */
+
+        //刷新用户信息方法
         Result refreshResult = userRongCloud.update(userModel);
         System.out.println("refresh:  " + refreshResult.toString());
         //将融云返回的唯一token放在redis数据库中
         ValueOperations valueOperations = redisTemplate.opsForValue();
-        valueOperations.set(user.getId(), tokenResult.getToken());
+        logger.info("user.id " + result.getId());
+        logger.info("tokenResult.token :" + tokenResult.getToken());
+        valueOperations.set(result.getId(), tokenResult.getToken());
 
 
         Map<String, Object> map = new HashMap<String,Object>(16);
@@ -156,7 +150,7 @@ public class LoginController {
     @ResponseBody
     public ResponseResult<Object> sendCodeByEmail(@RequestBody UserPostCondition userPostCondition,HttpServletRequest request) throws MessagingException {
         if (StringUtils.isBlank(userPostCondition.getEmail())) {
-            throw new NullException("邮箱不能为空");
+            throw new UserException("邮箱不能为空");
         }
         userService.sendMail(userPostCondition.getEmail(),request);
         return new ResponseResult<Object>(0,"发送成功");
@@ -196,7 +190,7 @@ public class LoginController {
         HttpSession session = request.getSession();
         Object code = session.getAttribute(user.getEmail());
         if (code == null) {
-            throw new NullException("验证码已过期");
+            throw new UserException("验证码已过期");
         }
         if ((Integer)code != user.getCode()) {
             throw new UserException("注册码不匹配");
@@ -214,7 +208,7 @@ public class LoginController {
     @PostMapping(value = "/registion")
     public ResponseResult<Object> getUserByEmail(@RequestBody UserPostCondition user) {
         if (StringUtils.isBlank(user.getEmail())) {
-            throw new NullException("邮箱不能为空");
+            throw new UserException("邮箱不能为空");
         }
         if (userService.findUserByEmail(user.getEmail()) != null) {
             return new ResponseResult<Object>(1, "该邮箱已存在", null);

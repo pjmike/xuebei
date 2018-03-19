@@ -39,5 +39,5 @@ public class RcloudServiceConstrants {
 
 //2007=测试用户数量超限，测试用户数量超限。请提供蛋申请
 
-    //		chatRoom(1),group(2),message(3),push(4),sensitiveword(5),sms(6),userRongCloud(7),worefilter(8);
+    //		chatRoom(1),group(2),message(3),push(4),sensitiveword(5),sms(6),user(7),worefilter(8);
 }

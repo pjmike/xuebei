@@ -51,7 +51,7 @@ public class Whitelist {
         }
 
         if (userId == null) {
-            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/userRongCloud/whitelist/add", "Paramer 'userId' is required");
+            throw new ParamException(CommonConstrants.RCLOUD_PARAM_NULL,"/chatroom/user/whitelist/add", "Paramer 'userId' is required");
         }
 
         StringBuilder sb = new StringBuilder();
@@ -67,7 +67,7 @@ public class Whitelist {
             body = body.substring(1, body.length());
         }
 
-        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/userRongCloud/whitelist/add.json", "application/x-www-form-urlencoded");
+        HttpURLConnection conn = HttpUtil.CreatePostHttpConnection(rongCloud.getApiHostType(), appKey, appSecret, "/chatroom/user/whitelist/add.json", "application/x-www-form-urlencoded");
         HttpUtil.setBodyParameter(body, conn);
 
         return (ResponseResult) GsonUtil.fromJson(CommonUtil.getResponseByCode(PATH,CheckMethod.ADD,HttpUtil.returnResult(conn)), ResponseResult.class);
