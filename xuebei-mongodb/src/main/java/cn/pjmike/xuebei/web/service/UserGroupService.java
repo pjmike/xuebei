@@ -52,7 +52,7 @@ public interface UserGroupService {
      *
      * @param groupInfo
      */
-    void quitAroudGroup(UserGroupInfo groupInfo);
+    void quitAroudGroup(UserGroupInfo groupInfo) throws Exception;
 
     /**
      * 获取群二维码信息

@@ -7,233 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f561cb-1b99-4f8c-b9ef-9590970e388d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/PushMessage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/TemplateMessage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/UserTag.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/broadcast/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/broadcast/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/block/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/demotion/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/distribute/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/global-gag/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/keepalive/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/member-gag/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/model.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/chatroom/whitelist/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/conversation/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/conversation/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/group/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/group/gag/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/group/gag/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/group/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/TemplateMessage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/_private/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/chatroom/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/discussion/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/group/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/history/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/recall/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/system/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/message/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/sensitiveword/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/sensitiveword/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/blacklist/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/block/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/online-status/api.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/verify.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/rongcloud/RongcloudUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/UserRongCloud.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/models/UserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/maven-status/xuebei-mongodb.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-common/target/xuebei.jar" afterPath="$PROJECT_DIR$/xuebei-common/target/xuebei.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/RongCloud.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/RongCloud.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/BlackListExample.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/BlackListExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/BlockExample.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/BlockExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/UserExample.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/example/user/UserExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/messages/TxtMessage.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/messages/TxtMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/Chatroom.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/Chatroom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/ban/Ban.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/ban/Ban.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/block/Block.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/block/Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/gag/Gag.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/gag/Gag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/whitelist/User.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/whitelist/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/whitelist/Whitelist.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/chatroom/whitelist/Whitelist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/group/Group.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/group/Group.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/group/gag/Gag.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/group/gag/Gag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/blacklist/Blacklist.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/blacklist/Blacklist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/block/Block.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/block/Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/onlinestatus/OnlineStatus.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/methods/user/onlinestatus/OnlineStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/models/response/BlackListResult.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/models/response/BlackListResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/util/JsonUtil.class" afterPath="$PROJECT_DIR$/xuebei-im/target/classes/io/rong/util/JsonUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/xuebei-im-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/xuebei-im/target/xuebei-im-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/domain/User.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/chat/controller/UserGroupController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/chat/controller/UserGroupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/controller/LoginController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/controller/OwnerExceptionController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/controller/OwnerExceptionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/UserRelationDao.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/UserRelationDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/Impl/UserGroupServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/Impl/UserGroupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/Impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/Impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/UserGroupService.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/UserGroupService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/UserRelationService.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/UserRelationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb.war" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/domain/User.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/chat/controller/UserGroupController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/chat/controller/UserGroupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/controller/LoginController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/controller/OwnerExceptionController.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/controller/OwnerExceptionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/UserRelationDao.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/UserRelationDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/Impl/UserGroupServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/Impl/UserGroupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/Impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/Impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/UserGroupService.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/UserGroupService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/UserRelationService.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/UserRelationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.class" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/lib/xuebei-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/lib/xuebei-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/lib/xuebei-im-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/lib/xuebei-im-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/SelectController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/SelectDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/SelectDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/SelectService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/SelectServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/xuebei-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-common/target/surefire-reports/TEST-com.pjmike.AppTest.xml" afterPath="$PROJECT_DIR$/xuebei-common/target/surefire-reports/TEST-com.pjmike.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-common/target/surefire-reports/com.pjmike.AppTest.txt" afterPath="$PROJECT_DIR$/xuebei-common/target/surefire-reports/com.pjmike.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-common/xuebei-common.iml" afterPath="$PROJECT_DIR$/xuebei-common/xuebei-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/RongCloud.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/RongCloud.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/BanExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/BanExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/BlockExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/BlockExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/ChatroomExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/ChatroomExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/DemotionExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/DemotionExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/DistributeExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/DistributeExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/GagExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/GagExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/KeepaliveExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/chatroom/KeepaliveExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/conversation/ConversationExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/conversation/ConversationExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GagExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GagExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/message/MessageExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/message/MessageExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/sensitive/SensitiveExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/sensitive/SensitiveExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/BlackListExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/BlackListExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/BlockExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/BlockExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/UserExample.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/UserExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/Error.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/Error.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/ParamError.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/ParamError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/ParamException.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/ParamException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/RcloudException.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/exception/RcloudException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/BaseMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/BaseMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CmdMsgMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CmdMsgMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CmdNtfMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CmdNtfMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ContactNtfMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ContactNtfMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CustomTxtMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/CustomTxtMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ImgMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ImgMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ImgTextMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ImgTextMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/LBSMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/LBSMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ProfileNtfMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/ProfileNtfMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/TxtMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/TxtMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/VoiceMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/VoiceMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/Chatroom.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/Chatroom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/ban/Ban.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/ban/Ban.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/block/Block.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/block/Block.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/demotion/Demotion.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/demotion/Demotion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/distribute/Distribute.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/distribute/Distribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/gag/Gag.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/gag/Gag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/keepalive/Keepalive.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/keepalive/Keepalive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/whitelist/User.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/whitelist/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/whitelist/Whitelist.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/chatroom/whitelist/Whitelist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/conversation/Conversation.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/conversation/Conversation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/Group.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/gag/Gag.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/gag/Gag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/Message.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/_private/Private.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/_private/Private.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/chatroom/Chatroom.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/chatroom/Chatroom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/discussion/Discussion.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/discussion/Discussion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/group/Group.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/group/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/history/History.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/history/History.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/system/MsgSystem.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/message/system/MsgSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/sensitive/SensitiveWord.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/sensitive/SensitiveWord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/sensitive/Wordfilter.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/sensitive/Wordfilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/blacklist/Blacklist.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/blacklist/Blacklist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/block/Block.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/block/Block.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/onlinestatus/OnlineStatus.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/onlinestatus/OnlineStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/CheckMethod.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/CheckMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/CommonConstrants.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/CommonConstrants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/Result.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/Result.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/Templates.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/Templates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/chatroom/ChatroomMember.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/chatroom/ChatroomMember.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/chatroom/ChatroomModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/chatroom/ChatroomModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/conversation/ConversationModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/conversation/ConversationModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/GroupModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/GroupModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/UserGroup.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/UserGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/BroadcastMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/BroadcastMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/ChatroomMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/ChatroomMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/GroupMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/GroupMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionMessageContent.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionMessageContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionedInfo.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MentionedInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MessageModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/MessageModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/PrivateMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/PrivateMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/RecallMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/RecallMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/SystemMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/SystemMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/TemplateMessage.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/message/TemplateMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlackList.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlackList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlackListResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlackListResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlockChatRoomUser.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlockChatRoomUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlockUserResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/BlockUserResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomDemotionMsgResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomDemotionMsgResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomKeepaliveResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomKeepaliveResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomQueryResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomQueryResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomUserQueryResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ChatroomUserQueryResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/CheckOnlineResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/CheckOnlineResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ConversationNotificationResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ConversationNotificationResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/GagChatRoomUser.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/GagChatRoomUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/GroupUserQueryResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/GroupUserQueryResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/HistoryMessageResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/HistoryMessageResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListBlockChatroomUserResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListBlockChatroomUserResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListGagChatroomUserResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListGagChatroomUserResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListGagGroupUserResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListGagGroupUserResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListWordfilterResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ListWordfilterResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ResponseResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/ResponseResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSImageCodeResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSImageCodeResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSSendCodeResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSSendCodeResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSVerifyCodeResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/SMSVerifyCodeResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/TokenResult.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/response/TokenResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/sensitiveword/SensitiveWordModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/sensitiveword/SensitiveWordModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/user/UserModel.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/user/UserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CodeUtil.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CodeUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CommonUtil.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CommonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/GsonUtil.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/GsonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/HostType.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/HostType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/HttpUtil.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/HttpUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/JsonUtil.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/JsonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/RcloudServiceConstrants.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/RcloudServiceConstrants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/xuebei-im/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/xuebei-im/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/xuebei-im/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-im/xuebei-im.iml" afterPath="$PROJECT_DIR$/xuebei-im/xuebei-im.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupInfo.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroup.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/LoginController.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/OwnerExceptionController.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/OwnerExceptionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserRelationDao.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserRelationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/GroupRelationDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/UserRelationDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserGroupService.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserGroupService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserRelationService.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserRelationService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserRelationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/main/resources/spring/applicationContext-mongodb.xml" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/main/resources/spring/applicationContext-mongodb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/classes/spring/applicationContext-mongodb.xml" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/classes/spring/applicationContext-mongodb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/spring/applicationContext-mongodb.xml" afterPath="$PROJECT_DIR$/xuebei-mongodb/target/xuebei-mongodb/WEB-INF/classes/spring/applicationContext-mongodb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" afterPath="$PROJECT_DIR$/xuebei-mongodb/xuebei-mongodb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuebei.iml" afterPath="$PROJECT_DIR$/xuebei.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/UserRongCloud.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/UserInfo.java" afterPath="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/test/cn/pjmike/xuebei/web/dao/impl/UserRongCloudGroupDaoImplTest.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/test/cn/pjmike/xuebei/web/dao/impl/UserGroupDaoImplTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/xuebei-mongodb/src/test/cn/pjmike/xuebei/web/service/impl/UserRongCloudGroupServiceImplTest.java" afterPath="$PROJECT_DIR$/xuebei-mongodb/src/test/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImplTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -281,110 +65,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserGroupServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java">
+      <file leaf-file-name="ChatMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/ChatMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3690">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="e#2720#2735#0" expanded="true" />
-                <element signature="e#4061#4076#0" expanded="true" />
-                <element signature="e#8658#8673#0" expanded="true" />
-                <element signature="e#8722#8738#0" expanded="true" />
-                <element signature="e#9071#9091#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserGroupDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserGroupDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="144">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserGroupInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroupInfo.java">
+      <file leaf-file-name="SelectDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/SelectDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="380">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/SelectDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/SelectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-90">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#806#816#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTemp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserTemp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-385">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java">
+      <file leaf-file-name="ResponseResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/utils/ResponseResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4056">
-              <caret line="183" column="18" lean-forward="false" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RongCloud.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/RongCloud.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1608">
-              <caret line="90" column="9" lean-forward="false" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+            <state relative-caret-position="191">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/user/User.java">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2496">
-              <caret line="117" column="1" lean-forward="false" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+            <state relative-caret-position="24">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GsonUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/GsonUtil.java">
+      <file leaf-file-name="SelectService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/SelectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="236">
+              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding>
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/CheckMethod.java">
+      <file leaf-file-name="SelectServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/SelectServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="382">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/message/MessageExample.java">
+      <file leaf-file-name="UserGroupController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1176">
-              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="366">
+              <caret line="123" column="44" lean-forward="false" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -399,6 +189,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -423,13 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserRelation.java" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/ChatController.java" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/websocket/WebSocketStompConfig.java" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/GroupRelationController.java" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserService.java" />
-        <option value="$PROJECT_DIR$/xuebei-im/pom.xml" />
         <option value="$PROJECT_DIR$/xuebei-im/src/main/java/rong/models/group/GroupModel.java" />
         <option value="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/messages/BaseMessage.java" />
         <option value="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/UserRongClound.java" />
@@ -471,9 +257,16 @@
         <option value="$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java" />
         <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupInfo.java" />
         <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserGroupService.java" />
-        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java" />
         <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/rongcloud/RongcloudUtils.java" />
         <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroup.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/SelectDao.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/SelectDaoImpl.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/SelectService.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/SelectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java" />
+        <option value="$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/SelectController.java" />
       </list>
     </option>
   </component>
@@ -551,7 +344,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -559,13 +352,247 @@
               <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuebei" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rong" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rong" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="conversation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rong" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rong" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="rongcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei-mongodb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xuebei" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1029,7 +1056,8 @@
       <workItem from="1521377637291" duration="558000" />
       <workItem from="1521379319131" duration="598000" />
       <workItem from="1521449188395" duration="4030000" />
-      <workItem from="1521453723857" duration="205000" />
+      <workItem from="1521453723857" duration="495000" />
+      <workItem from="1521464269211" duration="5563000" />
     </task>
     <servers />
   </component>
@@ -1066,10 +1094,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221515000" />
+    <option name="totallyTimeSpent" value="227368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1092,7 +1121,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13289036" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.003322259" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23216996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1133,203 +1162,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/exception/NullException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/OwnerExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/maven.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/org/apache/commons/lang/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3192">
-          <caret line="159" column="26" lean-forward="false" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CommonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7896">
-          <caret line="339" column="35" lean-forward="false" selection-start-line="339" selection-start-column="35" selection-end-line="339" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/target/classes/io/rong/util/JsonUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/CodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24480">
-          <caret line="1087" column="13" lean-forward="false" selection-start-line="1087" selection-start-column="3" selection-end-line="1088" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="104" lean-forward="false" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17088">
-          <caret line="745" column="18" lean-forward="false" selection-start-line="745" selection-start-column="18" selection-end-line="745" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/resources/jsonsource/user/block/api.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/UserExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-common/src/main/java/com/pjmike/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/intercepter/AdminInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/maven.m2/repository/org/springframework/spring-core/5.0.0.RELEASE/spring-core-5.0.0.RELEASE-sources.jar!/org/springframework/util/DigestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/utils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="128" column="34" lean-forward="false" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/quartz/TimerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserRelationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/GroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/GroupRelationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/GroupModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/group/UserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GagExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/rongcloud/RongcloudUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/models/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
@@ -1418,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1272">
           <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,8 +1274,8 @@
         <state relative-caret-position="240">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1465,6 +1296,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserGroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="242" column="11" lean-forward="true" selection-start-line="242" selection-start-column="11" selection-end-line="242" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="8" />
+          <folding>
+            <element signature="e#2758#2773#0" expanded="true" />
+            <element signature="e#4099#4114#0" expanded="true" />
+            <element signature="e#9212#9227#0" expanded="true" />
+            <element signature="e#9276#9292#0" expanded="true" />
+            <element signature="e#9625#9645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="75" column="33" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/user/BlockExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserRelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/GroupRelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/rongcloud/RongcloudUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/controller/OwnerExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1314">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/GroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/Venue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/dto/UserCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/dto/UserPostCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserGroupInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1473,40 +1446,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/methods/group/Group.java">
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupRelation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4056">
-          <caret line="183" column="18" lean-forward="false" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        <state relative-caret-position="-241">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-im/src/main/java/io/rong/example/group/GroupExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserGroupDao.java">
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupTemp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/UserGroupServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/GroupInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3690">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="191">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/BaseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/SelectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding>
-            <element signature="e#2720#2735#0" expanded="true" />
-            <element signature="e#4061#4076#0" expanded="true" />
-            <element signature="e#8658#8673#0" expanded="true" />
-            <element signature="e#8722#8738#0" expanded="true" />
-            <element signature="e#9071#9091#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/SelectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/service/impl/SelectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/ChatMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/UserGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="123" column="44" lean-forward="false" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/dao/impl/SelectDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/utils/ResponseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/Model/UserTemp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xuebei-mongodb/src/main/java/cn/pjmike/xuebei/web/chat/controller/SelectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#806#816#0" expanded="true" />
           </folding>
         </state>
       </provider>

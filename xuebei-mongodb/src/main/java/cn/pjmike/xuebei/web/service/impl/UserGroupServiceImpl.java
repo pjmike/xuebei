@@ -16,6 +16,7 @@ import io.rong.methods.group.Group;
 import io.rong.models.Result;
 import io.rong.models.group.GroupMember;
 import io.rong.models.group.GroupModel;
+import io.rong.models.user.UserModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -192,9 +193,21 @@ public class UserGroupServiceImpl implements UserGroupService{
         return null;
     }
     @Override
-    public void quitAroudGroup(UserGroupInfo groupInfo) {
+    public void quitAroudGroup(UserGroupInfo groupInfo) throws Exception {
         UserGroup group = userGroupDao.findGroupByPwdAndLoc(groupInfo.getPassword(), groupInfo.getLocation());
         groupRelationDao.deleteGroupRelationByuidAndGid(group.getGroupId(), groupInfo.getUuid());
+        //融云退出
+        RongCloud rongCloud = RongCloud.getInstance();
+        Group groupRong = rongCloud.group;
+        GroupMember[] members = {new GroupMember().setId(groupInfo.getUuid())};
+        GroupModel groupModel = new GroupModel()
+                .setId(group.getGroupId())
+                .setMembers(members)
+                .setName(group.getGroupName());
+        //退群
+        Result result = groupRong.quit(groupModel);
+        logger.info("quit group result:" + result.toString());
+
     }
     @Override
     public void getGroupQRCode() {

@@ -72,7 +72,7 @@ public class UserGroupController {
      */
     @PostMapping(value = "/face")
     @ApiOperation(value = "面对面建群")
-    public ResponseResult<Object> creatGroup(@RequestBody UserGroupInfo groupInfo) {
+    public ResponseResult<Object> creatGroup(@RequestBody UserGroupInfo groupInfo) throws Exception {
         ResponseResult<Object> result = userGroupService.joinAroundGroup(groupInfo);
         result.setCode(0);
         result.setMsg("建群成功");
@@ -120,7 +120,7 @@ public class UserGroupController {
      */
     @DeleteMapping(value = "/face/users/{uuid}")
     @ApiOperation(value = "退出面对面建群")
-    public ResponseResult<Object> deleteUserGroupRelation(@PathVariable("uuid") String uuid, @RequestBody UserGroupInfo groupInfo) {
+    public ResponseResult<Object> deleteUserGroupRelation(@PathVariable("uuid") String uuid, @RequestBody UserGroupInfo groupInfo) throws Exception {
         userGroupService.quitAroudGroup(groupInfo);
         return new ResponseResult<Object>(0, "退出面对面建群成功");
     }

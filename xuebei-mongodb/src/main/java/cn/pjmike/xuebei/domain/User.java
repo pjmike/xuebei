@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.Pattern;
@@ -23,6 +24,10 @@ public class User {
     @Id
     private String id;
     @ApiModelProperty(value = "用户名")
+    /**
+     * 添加全文索引
+     */
+    @TextIndexed
     private String username;
     @ApiModelProperty(value = "用户头像")
     private String icon;

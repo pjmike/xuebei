@@ -2,6 +2,7 @@ package cn.pjmike.xuebei.web.chat.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.GeoSpatialIndexed;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
@@ -30,6 +31,7 @@ public class UserGroup implements Serializable{
     /**
      * 群名称
      */
+    @TextIndexed
     private String groupName;
     /**
      * 群主
